@@ -1,0 +1,11 @@
+TEXTAREA {FONT-SIZE: 9 pt;font-family : Verdana;font-weight : normal;}
+INPUT {FONT-SIZE: 9 pt;font-family : Verdana;font-weight : normal;}
+.nadpis {font-family : Arial CE, Arial, Helvetica, sans-serif;font-weight : bold;font-size : 15pt;color : #004400;}
+.povinne {FONT-SIZE: 9 pt;font-family : Verdana;font-weight : bold;color : Red;}
+.male {FONT-SIZE: 8 pt;font-family : Verdana;font-weight : bold;color : Red;}
+.nepovinne {FONT-SIZE: 9 pt;font-family : Verdana;font-weight : bold;}
+.jmeno {FONT-SIZE: 11 pt;font-family : Verdana;font-weight : bold;color :  #004400;}
+.odkaz {FONT-SIZE: 10 pt;font-family : Verdana;font-weight : bold;color :  #00008B;text-decoration : none;}
+.odkaz:HOVER {FONT-SIZE: 10 pt;font-family : Verdana;font-weight : bold;color :  #00008B;text-decoration : underline;}
+.cas {FONT-SIZE: 10 pt;font-family : Verdana;font-weight : bold;color :  #00008B;}
+.text {FONT-SIZE: 10 pt;font-family : Verdana;color : #FFFF00;font-weight : bold;}

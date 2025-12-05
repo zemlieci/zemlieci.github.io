@@ -1,0 +1,98 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skolióza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Skolióza</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+už od detstva stravu chudobnú na stavebné prvky, potrebné pre zdravý vývoj kostí, osteoporózny proces, narušenú činnosť obličiek a celého vylučovacieho systému, spomalené trávenie, poškodený cievny systém.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+30g vňate zlatobyle obyčajnej,<br>
+30g vňate prasličky roľnej,<br>
+30g listov brezy previsnutej,<br>
+20g kôry vŕby bielej,<br>
+20g plodov ruže šípovej (šípky),<br>
+20g kvetov rumančeka pravého,<br>
+20g kvetov túžobníka brestového,<br>
+20g vňate stavikrvu vtáčieho,<br>
+15g kvetov hlohu jednosemenného,<br>
+15g kvetov lipy malolistej,<br>
+15g vňate repíka lekárskeho,<br>
+15g vňate ľubovníka bodkovaného a<br>
+po 5g listov a<br>
+kvetov broskyne obyčajnej.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 15 minút a preceď do termosky. Pi po dúškoch celý deň do 19. hodiny. Denne môžeš vypiť až dva litre tohto čaju. Po minutí zmesi si urob dvojtýždňovú prestávku a kúru takto zopakuj ešte päťkrát. Potom každý deň vypi preventívne pol litra čaju pripraveného vždy z inej byliny tejto zmesi.<br>
+* Upozornenie: Tehotné a dojčiace ženy si zmes pripravia bez listov a kvetov broskyne obyčajnej !<br>
+* Celú chrbticu a kĺby si striedavo dva až tri razy denne premasíruj ľubovníkovým olejom, kostihojovou a propolisovou masťou. Rob dlhodobo.<br><br>
+
+* Dlhodobo a minimálne trikrát do týždňa si priprav vaňový kúpeľ z tejto zmesi:<br>
+ROVNAKÉ DIELY<br>
+listov brezy previsnutej,<br>
+listov a kvetov broskyne obyčajnej,<br> 
+vňate pamajoránu obyčajného,<br>
+kvetov levandule úzkolistej,<br> 
+kvetov podbeľa liečivého a<br> 
+podzemku pýru plazivého.<br>
+Vaňový kúpeľ.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania.<br><br>
+
+4. Šťavy:<br>
+uhorková, mrkvová, zelerová, jablková, ananásová, z vodnice, kalerábová, z brokolice, z paštrnáka, z póru.
+Denne pi niektorú, v množstve aspoň 2dl.<br><br>
+
+5. Prírodné preparáty:<br>
+Pol roka užívaj ABC Plus a B-komplex- z každého dve tablety denne po jedle. Prírodný Vitamín C 1000 - dve tablety denne. Triple potency lecitín - trikrát denne po jednej tablete (alebo Lecitín 1200 v dvojitých dávkach). Uucernové tablety - trikrát denne po dve spolu s Acidophilusom (trikrát po jednej tablete). Po štvrťroku užívania týchto prípravkov začni brať aj Kalcium + Magnézium - po dve tablety denne. Predtým vždy zjedz 50-100g obilninovej kaše, za hrsť čerstvého zeleného hrášku, alebo za hrsť orechov, prípadne jedlo z rýb (sardinky, nátierky, ryby v náleve a podobne). Kalcium + Magnézium užívaj štvrť roka.<br><br>
+
+* Upozornenie: Lucernové tablety sú detoxikačné. Pri ich užívaní preto treba piť dva až tri litre tekutín denne (nie minerálne vody, ale čistú vodu, čaj). Inak sa účinok tabliet znižuje, ba v niektorých prípadoch sa dokonca môžu zhoršiť zdravotné problémy.<br><br>
+
+6. Iné rady:<br>
+Dávaj si pozor na prechladnutie od nôh, spávaj v teplých ponožkách, nesadaj si na studené predmety !<br><br>
+
+7. Potrebná duchovná zmena:<br><br>
+PRESTAŇ SA POVAŽOVAŤ ZA OBEŤ, KTORÚ INÍ IBA VYUŽÍVAJÚ, ZADEĽSI ČAS TAK, ABY SI STIHOL PLNIŤ RÔZNE ÚLOHY A POVINNOSTI BEZ NÁHLENIA A STRESOV, ČÍM SA ZBAVÍŠ POCITU PREŤAŽENOSTI. NEPREPADAJ ZÚFALSTVU, BEZNÁDEJI A SKĽÚČENOSTI, KEĎ SA TI NEDARÍ VŠETKO TAK, AKO SI PREDSTAVUJEŠ. NAUČ SA KONAŤ SAMOSTATNE, SLOBODNE A TVORIVO. POZERAJ SA DO BUDÚCNOSTI S OPTIMIZMOM, ZBAV SA NADMERNEJ PRECITLIVENOSTI A ÚZKOSTLIVOSTI.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

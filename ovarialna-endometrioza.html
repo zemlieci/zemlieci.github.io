@@ -1,0 +1,92 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ovariálna emdometrióza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Ovariálna emdometrióza</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+časté prechladnutia, ktoré spôsobili silné zápaly v ženských orgánoch, hormonálne poruchy, oslabenú psychiku, oslabený imunitný systém, vyčerpanosť, narušenú látkovú výmenu.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+20g listov žihľavy dvojdomej,<br>
+20g vňate alchemilky žltozelenej,<br>
+20g vňate hluchavky bielej,<br>
+20g kvetov nechtíka lekárskeho,<br>
+20g plodov ruže šípovej (šípky),<br>
+20g listov ostružiny černicovej,<br>
+20g listov slezu lesného,<br>
+20g kvetov pagaštanu konského,<br>
+15g listov medovky lekárskej,<br>
+15g listov orecha vlašského,<br>
+10g koreňa valeriány lekárskej,<br>
+10g vňate železníka lekárskeho a<br>
+10g plodov kôpru voňavého.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 15 minút a preceď. Pi po dúškoch do 19. hodiny. Po troch týždňoch si urob týždňovú prestávku a kúru takto zopakuj ešte štyrikrát. Potom pi preventívne trikrát denne po šálke čaju týždeň pred predpokladaným začiatkom menštruácie a týždeň po nej.<br>
+* Cez deň si na hodinu prilož na celé podbrušie obklad zo Švédskych bylín (dostať v lekárni).<br>
+POSTUP: Pokožku si dôkladne natri nechtíkovou masťou, vatu alebo gázu navlhči tinktúrou zo Švédskych bylín, prilož na podbrušie, prekry mikroténom, froté uterákmi a dôkladne upevni.<br><br>
+
+Obklad nesmie chladiť !  Počas jeho pôsobenia nemusíš ležať. Po zložení obkladu si pokožku opláchni vodou, natri pleťovým mliekom alebo hydratačným krémom a zasyp detským púdrom. V prípade, že sa ti začnú tvoriť vyrážky, urob si medzi obkladmi prestávku. To znamená, že znova si ich priložíš až o týždeň po zmiznutí vyrážok. Dovtedy si dvakrát denne podbrušie ošetruj tak ako po zložení obkladu. Dovedna si prilož 30 obkladov.<br>
+* U ortopéda si daj napraviť krížovú a bedrovú časť chrbtice.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania.<br><br>
+
+4. Šťavy:<br>
+* Karotka 300g, cvikla 100g, uhorky 100g.<br>
+* Karotka 300g, špenát 200g.<br>
+* Karotka 320g, zeler 20g, petržlen 60g, špenát 100g.<br>
+* Karotka 300g, zeler 150g, petržlen 50g.<br>
+* Karotka 350g, cvikla 100g, kokosové mlieko 50g.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Podľa veku užívaj Golden Yaccu. Pri tomto prípravku zvýš príjem tekutín na 2 až 3 litre denne (nie minerálky !). Okrem toho pol roka ber po dve tablety Beta karoténu, Vitamínu E 400, Vitamínu C 1000 zo šípok. Do pošvy si aplikuj vaginálny gél Femigel (postupuj podľa priloženého návodu). Dovedna použi šesť balení, v každom sú tri tuby. Prvé dve balenia si aplikuj každý večer, ďalšie dve každý druhý večer a posledné dve balenia každý tretí večer. Potom preventívne každý mesiac po skončení menštruácie pol roka jedno balenie.<br><br>
+
+6. Iné rady:<br>
+Spodnú bielizeň nos iba bavlnenú, dávaj si veľký pozor na prechladnutie, spávaj čo najďalej od okna a v bavlnených ponožkách. Nesadaj si na studené predmety !<br><br>
+
+7. Potrebná duchovná zmena:<br><br>
+POVAŽUJ POHLAVNÉ ORGÁNY ZA PRIRODZENÚ SÚČASŤ SVOJHO TELA, NIE ZA "ČOSI" NEPEKNÉ A NEČISTÉ. NECTÍ SA STIESNENE ANI PREVINILO, KEĎ SI V INTÍMNOM KONTAKTE SO SVOJÍM PARTNEROM. NEVYKONÁVAJ POSLUŠNE IBA TO, ČO TI INÍ PRIKÁŽU, ALE CIEĽAVEDOME ROZVÍJAJ SVOJE TVORIVÉ SCHOPNOSTI. NEREAGUJ PODRÁŽDENE, NERVÓZNE, SO ZLOSŤOU !</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liečime sa sami</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/LSS.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content">
+      <h1>Liečime sa sami</h1>
+      Všetci veľmi dobre vieme v akom stave sa nachádza naše zdravotníctvo.<br>
+Lieky nie sú, alebo sa s nimi kšeftuje...<br>
+Dobré lieky prichádzajú o kategorizáciu a náhrady za ne nie sú žiadne, žiadne! Slovákom nič netreba...<br>
+Lekári nemajú záujem pomáhať ľuďom, všetko je to len o číslach a o tom, čo povie poisťovňa...<br>
+Poisťovne vykazujú miliónové zisky, ale ak niekto potrebuje nejakú špeciálnejšiu liečbu, tak musí žobrať vo verejných zbierkach...<br>
+Štát s tým hovno robí, pretože mu to tak vyhovuje, alebo z kšeftov idú peniaze do niečích vreciek...<br>
+Takže vo výsledku sú to skurvené poisťovne, ktoré si rozhodujú o tom, kto bude žiť a kto zomrie...<br><br>
+
+Je čas týmto zmrdom vytrieť oči a začať si pomáhať sami. Pretože to aj tak k tomu speje.<br>
+Ľudia dennodenne nasypú do seba antibiotiká, ktoré už ani nezaberajú...<br>
+Voľnopredajné lieky si kupujeme ako cukríky a pritom je to len blbé placebo...<br>
+Najhoršie je, že žiadne použiteľné riešenie nie je...<br><br>
+
+TOTO SÚ ŽIAĽ SMUTNÉ, ALE PRAVDIVÉ FAKTY!!!<br>
+A pritom v minulosti sme nič z toho nepotrebovali a liečili sme sa tým, čo vyrástlo zo zeme.<br><br>
+
+ZEM NÁS LIEČILA...!<br><br>
+
+Na tejto stránke nájdete zhrnuté poznámky liečiteľky Anny. Jedná sa o zápisky, ktoré vznikali mnoho rokov a sú v nich informácie a rady pomocou ktorých sa dokážete popasovať s množstvom neduhov a chorôb a to aj takých, ktoré lekári riešiť nemienia.<br><br>
+
+Rady uvedené na týchto stránkach sú overené na stovkách a tisícoch prípadov ľudí, ktorí už došli na svoj koniec a nevedeli si už nijak pomôcť. A VIEM, ŽE FUNGUJÚ...<br><br>
+
+AK UŽ NEMÁTE INÚ MOŽNOSŤ, AK STE UŽ DOŠLI NA NEJAKÝ SVOJ POMYSELNÝ KONIEC, STE ZÚFALÝ A UŽ VÁŽNE NEVIETE ČO ROBIŤ – SKÚSTE EŠTE RADY Z TÝCHTO STRÁNOK...<br><br>Ak máte nejaké otázky, píšte mi na mail. Budem odpovedať tak, ako budem stíhať.<br>
+      <hr>
+      <div style="text-align:center;color:#ffff00;line-height:1.8;">        
+Mail: alderamin(at)protonmail(dot)com
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

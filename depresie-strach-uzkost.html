@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Depresie, strach, úzkosť</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Depresie, strach, úzkosť</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+chronický zápal vo vylučovacích a pohlavných orgánoch, poškodený cievny systém, zlú činnosť pečene, posunuté stavce na celej chrbtici, zlé trávenie, stres, nedostatok vitamínov a minerálov (najmä horčíka, vitamínu B1, vitamínu E, vitamínu B6, líthia).<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+20g listov brezy previsnutej,<br>
+20g podzemku pýru plazivého,<br>
+20g vňate vresu obyčajného,<br>
+20g vňate myšieho chvosta obyčajného,<br> 
+20g vňate stavikrvu vtáčieho,<br>
+20g vňate prasličky roľnej,<br>
+20g plodov ruže šípovej (šípky),<br> 
+20g kvetov bazy čiernej,<br>
+20g kvetov rumančeka pravého,<br> 
+20g listov medovky lekárskej,<br>
+15g kvetov hlohu jednosemenného,<br>
+15g imela bieleho (bez bobúľ !),<br> 
+15g listov ríbezle čiernej, <br>
+15g vňate alchemilky žltozelenej,<br> 
+10g plodov kôpru voňavého a<br> 
+5g šišiek chmeľu obyčajného.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 15 minút a preceď. Pi po dúškoch denne do 19. hodiny. Po minutí zmesi si urob trojtýždňovú prestávku a zmes namiešaj takto ešte dva razy.
+Propolisovou masťou (dostať ju v lekárni) si dlhodobo dva razy denne masíruj krčnú, krížovú a bedrovú časť chrbtice. Po mesiaci intenzívneho masírovania si daj napraviť celú chrbticu u ortopéda.<br>
+* Dva až tri razy do týždňa si rob Vaňový kúpeľ v soli z Mŕtveho mora a na lepšie prekrvenie organizmu každý večer aj striedavé kúpele rúk a nôh v studenej a teplej vode.<br>
+* Viac ráz denne rob dychové cvičenia na zlepšenie funkčnosti a kapacity pľúc.<br><br>
+
+3. Stravovanie:<br>
+Výrazne obmedz rafinovaný cukor, sladké jedlá a alkohol, lebo tie v organizme znižujú hladinu vitamínov skupiny B. Vhodné sú aj Kompletné živiny.<br><br>
+
+4. Šťavy:<br>
+* mrkvová 3dl, špenátová 1,8dl.<br>
+* mrkvová 3dl, cviklová 0,9dl, uhorkovú 0,9dl.<br>
+* mrkvová 2,8dl, špenátová 1,7dl.<br>
+* mrkvová 2,5dl, petržlenová 0,5dl, zelerová 4dl.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Pol roka užívaj: Prírodný B komplex- dva razy denne po tablete po jedle. Vitamín C 1000 (zo šípok) - ako B-komplex. Kalcium + Magnézium + Zinok - dve tablety denne, spolu s dvoma tabletami Selénu. Predtým vždy zjedz podľa chuti obilninovú kašu alebo za hrsť orechov, alebo jedlo z ryby. Lecitín 1 200 - dva razy denne po dve tobolky. Prírodný Vitamín E 400 - 2xdenne. Začni užívať aj Golden Yaccu. Pri tomto prípravku pi denne 2 až 3 litre tekutín (nie minerálky). Užívaj mumio. Celkove využívaj tri päťgramové balenia mumia.<br><br>
+
+6. Iné rady:<br>
+Zaobstaraj si knihu o joge a nauč sa cvik s názvom Pozdrav slnku. Výborne uvoľňuje kŕčovito stiahnuté svaly na chrbtici. Dávaj si pozor na prechladnutia, nesadaj si na studené plochy. Vhodné sú prechádzky na čerstvom vzduchu, plávanie, turistika, tenis, tanec. Proti depresii, strachu a úzkosti pomáha aj Kúpeľ na posilnenie biopoľa a Očista po urieknutí.<br><br>
+
+7. Potrebná duchovná zmena:<br><br>
+HODNOŤ ŽIVOT REÁLNE, S NADHĽADOM, BEZ STRACHU A POKOJNE. NEÚSPECH NEPOVAŽUJ ZA TRAGÉDIU. NEHĽADAJ CHYBY IBA NA INÝCH, ALE VŠÍMAJ SI AJ SVOJE VLASTNÉ. VÁŽ SI NÁZORY PARTNERA/KY, NECH NIE SÚ TVOJE UŠI HLUCHÉ !  NIKDY SI NIČ NEVYNUCUJ NÁSILNE, PLAČOM, KRIKOM. KONAJ SAMOSTATNE, DÔVERUJ SÁM SEBE.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

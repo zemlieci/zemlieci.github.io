@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bechterevova choroba</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Bechterevova choroba</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+zlú funkčnosť obličiek, oslabenú činnosť pečene, narušený metabolizmus vápnika, početné zápaly v organizme, akútny nedostatok vitamínov (najmä skupiny B), poškodený cievny systém, časté prechladnutia, duševné alebo fyzické preťaženie, hormonálne poruchy.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+ROVNAKÉ DIELY <br>
+listov žihľavy dvojdomej,<br> 
+listov brezy previsnutej,<br>
+listov orecha kráľovského,<br>
+vňate zlatobyle obyčajnej,<br>
+vňate myšieho chvosta obyčajného,<br> 
+vňate repíka lekárskeho,<br>
+vňate prasličky roľnej,<br>
+vňate vresu obyčajného,<br>
+vňate vrbovky malokvetej,<br>
+vňate pupenca roľného,<br>
+podzemku pýru plazivého,<br>
+koreňa púpavy lekárskej,<br> 
+kôry vŕby bielej,<br> 
+kvetov bazy čiernej,<br> 
+kvetov nechtíka lekárskeho a<br> 
+kvetov túžobníka brestového.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Tri čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 15 minút a preceď. Pi po dúškoch do 19. hodiny. Po troch týždňoch si vždy urob týždňovú prestávku a kúru takto zopakuj ešte šesťkrát. Potom preventívne a dlhodobo pi každý deň pol litra čaju pripraveného vždy z inej byliny tejto zmesi.<br>
+* Trikrát do týždňa si rob sedacie kúpele alebo kúpele rúk a nôh z tejto zmesi: ROVNAKÉ DIELY 
+vňate materinej dúšky tymiánovej,<br>
+listov mäty piepornej,<br> 
+listov kapusty bielej,<br> 
+listov podbeľa liečivého a<br> 
+kôry z mladých vetvičiek gaštana jedlého.<br>
+PRÍPRAVA: Do 200ml ľubovnikového oleja pridaj po 2ml rozmarínovej, levanduľovej, mätovej a jedľovej silice a čistého oleja Tea tree. Obsah pred každým použitím dôkladne pretrep.<br>
+* S takto pripraveným olejom si minimálne dvakrát denne masíruj celú chrbticu a kĺby. Pokožku si pri masáži tri dovtedy, kým nevznikne pocit horúčavy až pálenia. Rob dlhodobo.<br>
+* Na opuchnuté miesta si prikladaj rozdrvené listy kaktusu aloe alebo listy skalnice strechovej.<br><br>
+
+POSTUP: Listy rozdrv nekovovým predmetom, vlož medzi dve vrstvy gázy alebo bieleho plátna, prilož, prekry mikroténom a upevni. Nechaj pôsobiť minimálne štyri hodiny až celú noc. Rob dovtedy, kým opuchy nezmiznú.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania. Pri tomto ochorení je najvhodnejšia úplne surová strava, prípadne iba 10 až 20 percent varenej. Na surovú stravu prechádzaj postupne.<br><br>
+
+4. Šťavy:<br>
+* Mrkvová 3,3dl, cviklová 0,9dl, z kokosového orecha 0,6dl.<br>
+* Mrkvová 3dl, cviklová 0,9dl, uhorková 0,9dl.<br>
+* Mrkvová 2,7dl, zelerová 1,5dl, petržlenová 0,6dl.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Počas troch mesiacov užívaj po tri tablety denne po jedle - prírodný B-komplexa Vitamín C 1000 zo šípok. Potom tri mesiace po dve tablety, ďalšie tri mesiace po jednej tablete. Trikrát denne (ráno nalačno, pol hodiny pred obedom a večer pred spaním) zjedz mumio s medom - kap. (147).. Rob dlhodobo. Štvrť roka ber denne aj tri tablety Triple potency lecitín, potom pol roka dve tablety denne a dlhodobo jednu denne. Lucernové tablety - trikrát denne po jednej tablete. Dovedna ich využívaj 750.<br>
+Pri tomto prípravku zvýš príjem tekutín až na 3 litre denne.<br><br>
+
+6. Iné rady:<br>
+Vhodná je chôdza na špičkách, robenie predklonov a záklonov, pobyt v saune, otužovanie studenou vodou (s vynechaním kĺbov), kloktanie studenou vodou.<br><br>
+ 
+7. Potrebná duchovná zmena:<br><br>
+NEVRACAJ SA DO MINULOSTI, ŽI V PRÍTOMNOSTI, DÔVERUJ V DOBRÚ BUDÚCNOSŤ. REZIGNÁCIU A TÚŽBU MAŤ OD VŠETKÉHO POKOJ NAHRAĎ AKTIVITOU. NEOBVIŇUJ SA ZA MINULÉ NEÚSPECHY.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

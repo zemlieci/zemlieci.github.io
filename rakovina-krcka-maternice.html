@@ -1,0 +1,94 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rakovina krčka maternice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Rakovina krčka maternice</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+silné bakteriálne zápaly v ženských orgánoch (najmä vo vaječníkoch), odkiaľ sa zápal šíril na maternicu a jej krčok, mechanické poškodenie krčka maternice v podobe ranky, zahojenie ktorej znemožňovali baktérie, takže okolité tkanivo začalo časom bujnieť. K rozvinutiu onkologického ochorenia prispel aj oslabený imunitný systém, zlé trávenie, funkčná porucha pečene a pankreasu.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+ROVNAKÉ DIELY<br>
+kvetov rumančeka pravého,<br>
+kvetov ibiša lekárskeho,<br>
+kvetov nechtĺka lekárskeho,<br>
+koreňa lopúcha väčšieho,<br>
+koreňa sladkého drievka hladkoplodého,<br>
+vňate hluchavky bielej,<br>
+vňate myšieho chvosta obyčajného,<br>
+vňate prasličky roľnej,<br>
+vňate ľubovníka bodkovaného,<br>
+listov žihľavy dvojdomej,<br>
+listov alchemilky žltozelenej a<br>
+listov slezu lesného.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve zarovnané čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 15 minút a preceď do termosky. Pi po dúškoch celý deň. Po piatich dňoch si vždy urob dvojdňovú prestávku, po dvoch mesiacoch dvojtýždňovú a kúru takto zopakuj ešte trikrát.<br>
+* Na celé podbrušie si prilož z tejto zmesi každú druhú noc obklad (dovedna 50x). Pri jeho príprave použi polievkovú lyžicu zmesi na pol litra vriacej vody, lúhuj 30 minút a preceď. Do roztoku namoč biele plátno, vyžmýkaj, prilož na telo, prekry mikroténom, froté uterákmi a upevni.<br><br>
+
+Okrem toho si urob 60 sedacích kúpeľov z tejto zmesi:<br>
+ROVNAKÉ DIELY<br>
+vňate kostihoja lekárskeho,<br>
+vňate prasličky roľnej,<br>
+listov slezu lesného,<br>
+listov šalvie lekárskej,<br>
+kvetov nechtíka lekárskeho a<br>
+vňate repíka lekárskeho.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania. Vhodná je aj Totálna protirakovinová kúra podľa Rudolfa Breussa.<br><br>
+
+4. Šťavy:<br>
+* Mrkvová (aspoň liter denne).<br>
+* Mrkvová 3dl, cviklová 1dl (postupne meň pomer v prospech cvikle).<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Pol roka užívaj: Prírodný B-komplex- 2 tablety denne po jedle. Vitamín C 1000 zo šípok - 2 tablety denne. Prírodný Vitamín E - trikrát denne po 100mg. Beta karotén - 2 tablety denne. Selén, Zinok - po 2 tablety denne po jedle.
+Potom ešte pol roka prípravok ABC Plus - 2 tablety denne po jedle. Chlorellu - trikrát denne po 2 tablety; dovedna štyri balenia.<br>
+V prípade podávania chemoterapie alebo ožarovania začni brať Chlorellu až po ukončení liečby.
+Všetky tieto rady dodržiavaj aj po operácii. So svojím ošetrujúcim lekárom konzultuj dlhodobé užívanie Golden Yaccy. Pri tomto prípravku zvýš príjem tekutín na 2 až 3 litre denne (nie minerálky !).<br><br>
+
+6. Potrebná duchovná zmena:<br><br>
+ÚPRIMNE ODPUSTI SEBE AJ KAŽDÉMU, KTO TI UBLÍŽIL, NEPRIPOMÍNAJ SI BOLESTNÚ MINULOSŤ, NEŽI S POCITOM KRIVDY, ODPORU, NENÁVISTI. NEUTÁPAJ SA V ZÁRMUTKU ZA NIEČÍM ALEBO NIEKÝM, PRESTAŇ SA OBVIŇOVAŤ KVÔLI NIEČOMU, ČO SA UŽ NEDÁ VRÁTIŤ SPÄŤ, NAPLŇ SVOJ ŽIVOT RADOSŤOU. VER, ŽE SA VYLIEČIŠ, DÔVERUJ BOHU !</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

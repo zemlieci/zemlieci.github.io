@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pár slov o stránke</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/o_stranke.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content">
+Táto stránka vznikla ako sľub:<br>
+Keď som ešte pracoval na západnom Slovensku dostal som sa do zdravotných problémov, lekári to bagatelizovali a došlo to až do stavu, keď o mojom stave za začali baviť ako o nezvratnom. Skončilo to z ich strany vetou: Už sme vyskúšali všetko a Bohužiaľ už vám pomôcť nijak nedokážeme, takže vám odporúčame zájsť si na oddelenie chronickej bolesti a užívať lieky na tlmenie bolesti... to akože do konca života... Mal som 25 rokov...<br><br>
+
+Ani neviem akým zázrakom som sa dozvedel o liečiteľke Anne. Zašiel som za ňou a ona si môj prípad vypočula a navrhla mi fytoterapiu, ktorú som ja pol roka dodržiaval ako slovo Božie. A áno, vyliečil som sa a dodnes daný problém už nemám.<br><br>
+
+Začal som sa zaujímať o prácu tejto pani. Postupne som sa dostával do tajomstiev využívania rastlín. Anna mi poskytla aj svoje zápisky a herbáre, ktoré som si začal prepisovať...<br><br>
+Stále mi vravela, že chce, aby jej poznatky boli prístupné pre všetkých. A keďže ja som sa vtedy začínal učiť tvoriť webové stránky, tak ma napadlo, že jej poznatky zverejním na internetových stránkach.<br><br>
+
+No osud ma zavial niekam inam a časom všetko zapadalo prachom. Ako čas šiel prešlo 21 rokov a ja plním sľub, ktorý som dal pani Anne a zverejňujem prvú časť jej poznámok...<br><br>
+Niektoré preparáty popisované v poznámkach sa už asi v lekárňach nepredávajú, alebo majú iné obchodné názvy. Predsa len za dve desaťročia sa toho asi zmenilo dosť. Ale to nie je problém, za mnohé nájdete náhrady, alebo vám poradia...<br><br>
+
+Využívajte tieto zverejnené informácie na pomoc sebe, alebo tým, ktorý si už pomôcť nevedia, alebo nedokážu...<br>
+Testujte ich na sebe...<br>
+Ak sa bojíte, dajte si polovičné, alebo štvrtinové dávky a presvedčte sa, že rady obsiahnuté na stránkach naozaj fungujú...<br><br>
+
+P. Anna, ak ešte žijete, sľub, ktorý som Vám dal je týmto sčasti splnený. Nové poznatky budem postupne pridávať.<br><br>
+
+Moja vďaka patrí Vám, za Váš súciť, za trpezlivosť, aj za tu úžasnú vlastnosť pomáhať.
+S úctou.<br><br>M.
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ewingov sarkom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Ewingov sarkom</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+narušený látkový metabolizmus, nedostatok výživných látok v strave, funkčnú poruchu pečene, obličiek, anémiu, oslabený imunitný systém.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+20g koreňa púpavy lekárskej,<br> 
+20g listov púpavy lekárskej,<br> 
+20g koreňa lopúcha väčšieho,<br> 
+20g listov žihľavy dvojdomej,<br> 
+20g plodov ruže šípovej (šípky),<br> 
+20g vňate myšieho chvosta obyčajného,<br> 
+20g listov medovky lekárskej,<br> 
+20g kvetov rumančeka pravého,<br> 
+15g vňate repíka lekárskeho,<br> 
+15g vňate prasličky roľnej,<br> 
+15g listov brezy previsnutej,<br> 
+10g vňate stavikrvu vtáčieho,<br> 
+10g listov ríbezle čiernej,<br> 
+10g vňate ľubovníka bodkovaného,<br> 
+10g koreňa omanu pravého,<br> 
+10g plodov fenikla obyčajného,<br> 
+15g vňate lipkavca syridlového,<br> 
+15g koreňa ihlice tŕnistej,<br> 
+20g listov skorocelu kopijovitého,<br> 
+20g stielky pľuzgierky islandskej,<br> 
+20g vňate pľúcnika lekárskeho,<br> 
+20g vňate pupenca roľného a<br> 
+20g kvetov divozela veľkokvetého.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Tri čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 10 minút a preceď. Pi po dúškoch do 19. hodiny. Po troch týždňoch užívania si urob týždňovú prestávku a kúru takto opakuj až do minutia zmesi. Potom si zaraď mesačnú prestávku, no počas nej pi podobne pripravovaný čaj z kvetov nechtíka lekárskeho.<br>
+* Dovedna si čajovú zmes namiešaj sedemkrát.<br>
+* Na oblasť sarkómu si denne prikladaj na štyri hodiny obklad z tinktúry kostihoja lekárskeho.<br><br>
+
+POSTUP: Postihnuté miesto si natri tenučkou vrstvou propolisovej masti, prilož viac vrstiev gázy navlhčenej tinktúrou z koreňa kostihoja, prekry mikroténom a upevni. Po zložení obkladu si postihnuté miesto opäť natri propolisovou masťou.
+Poznámka: Takto možno postupovať aj pri nádoroch kostí v rôznych častiach tela (rebrá, chrbtica, ruky, kĺby...).<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania. Denne konzumuj 75 až 80 percent nevarenej stravy. Okrem toho denne vypi pol litra surového kozieho mlieka. Najlepšie je čerstvo nadojené, ale môže byť aj kyslé.<br><br>
+
+4. Šťavy:<br>
+* Mrkvová (aspoň liter denne).<br>
+* Karotka 300g, špenát 200g.<br>
+* 2 veľké mrkvy, 1 mango.<br>
+* 3 veľké mrkvy, 6 veľkých listov špenátu.<br>
+* Hrsť žeruchy, 2 veľké mrkvy, 1/4 čerstvej papriky.<br>
+* 2 veľké mrkvy, 1 brokolica, 1 kúsok uhorky.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Dlhodobo užívaj Golden Yaccu. Pri tomto prípravku zvýš príjem tekutín (nie minerálky) na 2 až 3 litre denne. Okrem toho ber pol roka denne po dve tablety _ ABC Plus, Vitamín C 1000 s postupným vstrebávaním a Vitamín E 400. Pol roka aj po jednej tablete denne Zinok a Selén.<br><br>
+ 
+6. Potrebná duchovná zmena:<br><br>
+ÚPRIMNE ODPUSTI KAŽDÉMU, KTO TI UBLÍŽIL ČI UŽ VEDOME ALEBO NEVEDOME. V KAŽDOM ČLOVEKU VIĎ BYTOSŤ STVORENÚ BOHOM, KTORÁ SI ZASLÚŽI LÁSKU A ODPUSTENIE. PRIZNAJ SI ÚPRIMNE AJ SVOJE CHYBY A ZAČNI ICH POKOJNE NAPRÁVAŤ A ODSTRAŇOVAŤ. NEVRACAJ SA V SPOMIENKACH DO MINULOSTI, DÔVERUJ BUDÚCNOSTI. VYTÝČ SI ŽIVOTNÝ CIEĽ A DENNE SI V MYSLI OPAKUJ, ŽE HO NIELEN CHCEŠ DOSIAHNUŤ, ALE ŽE HO AJ S BOŽOU POMOCOU DOSIAHNEŠ !</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

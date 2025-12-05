@@ -1,0 +1,95 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salmonelóza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Salmonelóza</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+akútne infekčné ochorenie, ktoré spôsobujú rozličné typy salmonel. U nás sa najčastejšie vyskytuje Salmonella typhimurium a Salmonella enteritidis. Prameňom nákazy sú rôzne druhy hospodárskych zvierat: dobytok, ošípané, kačice, sliepky, ktoré sa nakazili od vtákov, hlodavcov (myší, potkanov) alebo kontaminovaným krmivom. Prenos na človeka sa uskutočňuje konzumáciou takéhoto nákazou postihnutého mäsa alebo nedostatočne tepelne spracovaných potravín s obsahom vajec. Črevná forma salmonelózy postihuje tenké črevo (nevoľnosť, vracanie, kŕčové bolesti brucha),; hnačky a teploty. Stolica je až vodnatá, sfarbená do zelena. Mimočrevná forma ochorenia sa vyskytuje vzácnejšie, ale je o to vážnejšia. Môže postihnúť ktorýkoľvek orgán či tkanivo v tele a ochorenie zvyčajne sprevádza hnisavý proces.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+30g koreňa horca žltého,<br>
+30g koreňa púpavy lekárskej,<br>
+30g koreňa lopúcha väčšieho,<br>
+30g koreňa ibiša lekárskeho,<br>
+20g listov slezu lesného,<br>
+20g listov ríbezle čiernej,<br>
+20g listov ostružiny černicovej,<br>
+20g listov brezy previsnutej,<br>
+20g vňate prasličky roľnej,<br>
+20g kvetov rumančeka pravého,<br>
+15g vňate stavikrvu vtáčieho,<br>
+15g vňate vresu obyčajného,<br>
+15g vňate zlatobyle obyčajnej,<br>
+15g vňate alchemilky žltozelenej,<br>
+10g vňate nátržníka husieho (prípadne strieborného alebo plazivého),<br>
+10g vňate materinej dúšky obyčajnej alebo tymianovej a<br>
+10g kôry vŕby bielej.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Tri zarovnané čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 15 minút a preceď. Pi denne po dúškoch do 19. hodiny.<br>
+Po troch týždňoch si urob týždňovú prestávku a kúru takto zopakuj ešte trikrát. Potom si urob štvortýždňovú prestávku a opäť zopakuj celú kúru (aj s prestávkami).<br>
+* V prípade, že ťa bolí chrbtica alebo kĺby, dva razy denne si do nich vmasíruj tinktúru z koreňa kostihoja lekárskeho.<br>
+* Po masáži tinktúrou si miesta ešte premasíruj aj propolisovou alebo mumiovou masťou (dostať v lekárni).<br>
+* Pri bolestiach hlavy si urob jemnú masáž spánkov, čela a krčnej chrbtice medovkovým, prípadne levanduľovým olejom alebo olejom z materinej dúšky.<br><br>
+
+3. Stravovanie:<br>
+Pol roka až rok dodržiavaj Pečeňovú diétu. Potom sa riaď podľa Zásad správneho stravovania.<br><br>
+
+4. Šťavy:<br>
+* mrkvová 2dl.<br>
+* jablková 2dl.<br>
+* ananásová 2dl.<br>
+* zemiaková 2dl.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Pol roka užívaj denne po dve tablety týchto prírodných preparátov: ABC Plus a Triple potency lecitin. Okrem toho začni užívať aj Golden Yaccu.<br>
+Počas užívania tohto prípravku musíš denne vypiť dva až dva a pol litra tekutín. Nie však minerálky !<br><br>
+
+6. Iné rady:<br>
+Rob si masáže pečene, pankreasu a brucha. Použi na ne olej z rumančeka pravého alebo mäty piepornej. Raz do týždňa si rob aj Jednodňovú očistnú kúru.<br><br>
+
+7. Potrebná duchovná zmena:<br><br>
+V TVOJOM SLOVNÍKU BY NIKDY NEMALO CHÝBAŤ ÚPRIMNÉ ĎAKUJEM, A TO AJ ZA MALIČKOSTI. POUVAŽUJ NAD TÝM, ČI TIE MATERIÁLNE VECI, KTORÉ ZHŔŇAŠ A KTORÝMI SA OBKLOPUJEŠ, TI PRINÁŠAJÚ SKUTOČNÉ ŠŤASTIE. ČOHO NEPOTREBNÉHO SA MÁŠ ZBAVIŤ, ČO TREBA V TVOJOM ŽIVOTE TAK RADIKÁLNE PREČISTIŤ, AKO KEĎ SALMONELÓZA "ČISTÍ" ČREVÁ. VYSTRÍHAJ SA LAKOMOSTI A CHAMTIVOSTI !</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

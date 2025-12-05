@@ -1,0 +1,96 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srdcová arytmia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Srdcová arytmia</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+poškodený cievny systém, zápaly vo vylučovacích a dýchacích orgánoch, bloky v chrbtici, narušenú činnosť čriev, stresy.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+30g listov medovky lekárskej,<br>
+30g listov brezy previsnutej,<br>
+30g plodov ruže šípovej (šípky),<br>
+30g kvetov rumanu rímskeho (alebo rumančeka pravého),<br>
+15g vňate železníka lekárskeho,<br>
+15g kvetov hlohu jednosemenného,<br>
+15g listov mäty piepornej,<br>
+20g listov ríbezle čiernej,<br>
+20g listov ostružiny černicovej,<br>
+20g vňate zlatobyle obyčajnej,<br>
+15g koreňa valeriány lekárskej,<br>
+10g plodov fenikla obyčajného.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve zarovnané čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 15 minút a preceď do termosky. Pi po dúškoch celý deň do 19. hodiny. Po troch týždňoch si urob týždňovú prestávku a kúru takto opakuj pol roka, Potom pi preventívne dlhodobo šálku čaju ráno nalačno a večer dve hodiny pred spaním.<br>
+* Celú chrbticu, ale najmä jej krčnú časť, si dva až tri razy denne striedavo zľahka premasíruj ľubovníkovým olejom a pagaštanovou masťou.<br><br>
+
+* Tri mesiace si každý druhý večer rob kúpele rúk a nôh z tejto zmesi:<br>
+ROVNAKÉ DIELY<br>
+vňate zlatobyle obyčajnej,<br>
+listov brezy previsnutej,<br>
+vňate vresu obyčajného,<br>
+vňate imela bieleho a<br>
+kvetov hlohu jednosemenného.<br>
+Sedací kúpeľ.<br>
+* Okrem nich si môžeš robiť aj striedavé kúpele končatín v studenej a teplej vode.<br>
+
+POSTUP: Na zem postav dva lavóry. Do jedného nalej studenú vodu, do druhého čo najteplejšiu. Najprv sa postav do studenej vody, potom do teplej. Opakuj 20x za sebou. Po kúpeli si nohy osuš a obuj si teplé ponožky. Tieto kúpele si rob ráno, hneď ako vstaneš a večer tesne pred spaním.<br>
+* Tri až päť ráz za deň rob aj dychové cvičenie na zlepšenie funkčnosti a kapacity pľúc takto: Sedem sekúnd pomaly a zhlboka nadychuj, na dve až tri sekundy dych zadrž a potom pomaly sedem sekúnd vydychuj. Opakuj vždy päťkrát za sebou. Cvič na čerstvom vzduchu alebo v dobre vyvetranej miestnosti !<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania Konzumuj veľa celozrnných potravín, sóje, slnečnicové semená, pivovarské kvasnice, surové ovocie a zeleninu, cesnak, cibuľu, kyslé mlieko, denne med, orechy. Obmedz soľ, živočíšne tuky, limonády, cukrovinky, maslo, vajcia.<br><br>
+
+4. Šťavy:<br>
+jablková, marhuľová, jahodová, mrkvová, pomarančová.<br>
+Denne pi niektorú, v množstve aspoň 2dl.<br><br>
+
+5. Prírodné preparáty:<br>
+Pol roka užívaj po dve tablety denne: ABC Plus, Vitamín E 400, Rutín, Vitamín C 1000 (zo šípok), Lecitín 1200, B-komplex. Potom ešte pol roka po jednej tablete denne.<br><br>
+
+6. Iné rady:<br>
+Dávaj si pozor na prechladnutie od nôh, po byte nechoď bez papúč, spávaj v teplých ponožkách.<br><br>
+ 
+7. Potrebná duchovná zmena:<br><br>
+PRESTAŇ SA NAHÁŇAŤ, STRESOVAŤ, NEPOROVNÁVAJ, KOĽKO PEŇAZÍ A MAJETKU MAJÚ INÍ ĽUDIA A ČO VŠETKO TEBE EŠTE V HMOTNEJ OBLASTI CHÝBA, ALE ZAČNI DBAŤ O SVOJ DUCHOVNÝ ROZVOJ.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

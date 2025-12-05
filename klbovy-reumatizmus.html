@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kĺbový reumatizmus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Kĺbový reumatizmus</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+poruchu látkovej výmeny z veľkej časti podmienenú konštitučne, chronický zápal obličiek, oslabenú činnosť celého vylučovacieho systému, zlé životné a stravovacie návyky, stresy, oslabenú činnosť orgánov v brušnej dutine. V tele sa hromadí kyselina močová a iné odpadové látky.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+30g listov brezy previsnutej,<br>
+30g kôry vŕby bielej,<br>
+20g vňate zlatobyle obyčajnej,<br>
+20g vňate prasličky roľnej,<br>
+20g vňate čakanky obyčajnej,<br>
+20g kvetov rumančeka pravého,<br>
+20g vňate stavikrvu vtáčieho,<br>
+10g kvetov lipy malolistej a<br>
+10g plodov ruže šípovej (šípky).<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 15 minút a preceď do termosky. Pi denne dva mesiace po dúškoch do 19. hodiny. Potom si vždy urob dvojtýždňovú prestávku. Čaj takto pi počas jedného roka.<br><br>
+
+* Každé ráno nalačno a večer medzi 18. a 19. hodinou vypi po 1,5 decilitra čaju z ihlice tŕnistej, ktorá takisto zvyšuje činnosť obličiek, čím pôsobí protireumaticky.<br><br>
+
+PRÍPRAVA: Vrchovatú kávovú lyžičku koreňa ihlice zalej tromi decilitrami studenej vody a maceruj cez noc. Ráno prihrej na slabom ohni tak, aby macerát nezovrel, odstav z ohňa, lúhuj 15 minút a preceď. Polovicu určenú na večer uskladni v chladničke. Pred použitím zohrej vo vodnom kúpeli. Po mesiaci pitia čaju si urob dvojtýždňovú prestávku a kúru takto zopakuj ešte trikrát.<br><br>
+
+* Postihnuté kĺby a celú chrbticu si striedavo masíruj kostihojovou, propolisovou a múmiovou masťou. Na masáže môžeš používať aj borievkový alebo brezový olej.<br><br>
+
+Trikrát do týždňa si rob sedacie kúpele z tejto zmesi:<br>
+ROVNAKÉ DIELY<br>
+pupeňov smreka alebo jedle alebo borovice,<br>
+listov a kôry topoľa čierneho,<br>
+vňate vresu obyčajného a<br>
+podzemku pýru plazivého.<br><br>
+
+Sedací kúpeľ. Keby si nemal možnosť robiť si sedacie kúpele, priprav si kúpele nôh (po členky) a kúpele rúk. Dovedna aplikuj minimálne 60 sedacích kúpeľov alebo 80 kúpeľov rúk a nôh.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania.<br><br>
+
+4. Šťavy:<br>
+* 3 ks zelerovej vňate, 1/4 uhorky.<br>
+* 3 stonky zeleru, 1 mrkva.<br>
+* 2 ks zeleru, 1 jablko.<br>
+* 1/2 ananásu, 1 mango.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Prírodný B-komplex, prírodný Vitamín C 1000, ABC Plus - trikrát denne po jednej tablete po jedle. Lecitín - trikrát denne po dve tablety. Potom ešte štvrť roka ber prvé tri prípravky dvakrát denne po tablete, Lecitín trikrát denne po jednej tablete. Okrem toho Kalcium + Magnézium + Zinok - tri tablety denne. Predtým zjedz 100g orechov alebo ovsených vločiek, prípadne pokrm z rýb (množstvo podľa chuti). Ďalší štvrťrok užívaj prvé tri prípravky po jednej tablete denne, Lecitín - trikrát denne po tablete, Kalcium + Magnézium + Zinok vynechaj.
+
+6. Iné rady:<br>
+Dávaj si pozor na prechladnutie, spávaj v ponožkách, nesadaj si na studené predmety.<br><br>
+
+7. Potrebná duchovná zmena:<br><br>
+NEZOTRVÁVAJ V POCITE DISKRIMINÁCIE, V PRESVEDČENÍ, ŽE NEMÔŽEŠ NAPREDOVAŤ TAK, AKO BY SI CHCEL, LEBO TI V TOM BRÁNIA INÍ. NEPRIPISUJ PODSTATNÝ VÝZNAM MATERIÁLNEMU BOHATSTVU A VLASTNÍCTVU, NECHCI SI AŽ DO KONCA ŽIVOTA PRIVLASTNIŤ TO, PO ČOM TÚŽIŠ, BEZ TOHO, ABY SI PREMÝŠĽAL O NÁSLEDKOCH. NEKRITIZUJ KAŽDÉHO A VŠETKO, ZBAV SA CHRONICKEJ ZATRPKNUTOSTI, BUĎ SPOKOJNÝ SÁM SO SEBOU, VYŽARUJ DOBRO A LÁSKU.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

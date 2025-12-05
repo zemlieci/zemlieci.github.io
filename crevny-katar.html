@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Črevný katar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Črevný katar</H1>
+
+1. Biopole upozorňuje najmä na:
+spomalenú činnosť žalúdka, žalúdočnú neurózu, skvasenú a zahnívajúcu potravu, ktorá ničí črevnú mikroflóru, na zapálenú sliznicu čriev s prítomnosťou vredov a zrastov, oslabenú činnosť pečene, pankreasu, žlčníka a hrubého čreva.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+20g vňate pakostu smradľavého,<br>
+20g koreňa nátržníka husieho,<br>
+20g kvetov rumančeka pravého,<br>
+20g listov slezu lesného,<br>
+20g listov skorocelu kopijovitého,<br>
+20g koreňa ibiša lekárskeho,<br>
+15g vňate nátržníka husieho,<br>
+15g stielky pľuzgierky islandskej,<br>
+10g vňate rozmarínu lekárskeho,<br>
+10g vňate ľubovníka bodkovaného,<br>
+10g listov orecha kráľovského a<br>
+10g plodov fenikla obyčajného.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve kávové lyžičky zmesi zalej litrom vriacej vody, lúhuj desať minút a preceď do termosky. Pol hodiny pred každým hlavným jedlom vypi po 1,5 decilitra čaju, zvyšok po dúškoch medzi jedlami. Po dvoch týždňoch užívania si urob vždy päťdňovú prestávku. Takto čaj pi trištvrte roka.<br><br>
+
+Poznámka: Tehotné ženy si zmes pripravia bez rozmarínu.<br><br>
+
+* Každú druhú noc si prikladaj na celé brucho tieto obklady: ROVNAKÉ DIELY kvetov rumančeka pravého, listov medovky lekárskej a vňate repíka lekárskeho.<br><br>
+
+PRÍPRAVA: Polievkovú lyžicu zmesi zalej pol litrom vriacej vody, lúhuj tridsať minút a preceď. Do roztoku namoč gázu alebo biele plátno, vyžmýkaj, prilož na telo, prekry mikroténom, froté uterákmi a upevni. Nechaj pôsobiť celú noc. Obklad nesmie chladiť ! Po zložení obkladu (dovedna si ich urob 60) si brucho vždy premasíruj rumančekovým olejom. Pri kŕčoch si rob masáže týmto olejom aj cez deň.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania.<br><br>
+
+4. Šťavy:<br>
+* Mrkvová (aspoň pol litra denne).<br>
+* Do jedla si pridaj trochu citrónovej šťavy, pred hlavným jedlom uži niekoľko lyžičiek šťavy z nových zemiakov.<br><br>
+
+5. Prírodné preparáty:<br>
+Mumio - 5g rozmiešaj v 500g medu zohriateho vo vodnom kúpeli, najviac do 40 stupňov Celzia. Miešaj, kým sa úplne nerozpustí a nevznikne jednoliata masa. Užívaj ráno nalačno, pol hodiny pred obedom a večer pred spaním po kávovej lyžičke. Po jeho minutí si urob týždňovú prestávku a kúru takto opakuj dlhodobo, minimálne však rok. Super Vita-Vim - počas roka dve tablety denne po jedle. Zinok - pol roka dve tablety denne po jedle, potom jednu tabletu denne. Digestive enzymes - tri mesiace trikrát denne po jednej tablete. Acidophilus lactobacilus - tri mesiace trikrát denne po jednej tablete, potom každý deň vypi pohár acidofilného mlieka alebo iného kyslomliečneho výrobku. Prírodný B-komplex- mesiac jednu tabletu denne po jedle, potom pol roka dve tablety denne.<br><br>
+
+6. Potrebná duchovná zmena:<br><br>
+
+PRESTAŇ SA PANICKY BÁŤ PRÍTOMNOSTI AJ BUDÚCNOSTI, VYHÝBAJ SA SAMOTE, UISŤUJ SÁM SEBA, ŽE V TVOJOM ŽIVOTE SA DEJÚ LEN DOBRÉ A SPRÁVNE VECI, KTORÉ TI POMÁHAJÚ NESTAGNOVAŤ. BUĎ SPOKOJNÝ S TÝM, ČO MÁŠ, NENADÁVAJ NA OSUD.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

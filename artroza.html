@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artróza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Artróza</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+zápalové procesy (často lokalizované v obličkách a močových cestách), jednotvárne stravovanie, zlé trávenie, narušený metabolizmus, nedostatok vitamínov a minerálov.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+10g kvetov rumanu rímskeho<br>
+(alebo rumančeka pravého),<br>
+10g kvetov levandule úzkolistej,<br>
+20g vňate fialky trojfarebnej,<br>
+20g listov šalvie lekárskej,<br>
+20g vňate rozmarínu lekárskeho a<br>
+30g koreňa ihlice tŕnistej.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve zarovnané čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 10 minút a preceď do termosky.<br>
+* Popíjaj počas dňa po dúškoch. Po minutí zmesi si urob tri týždne prestávku a kúru takto zopakuj ešte dvakrát.<br>
+* Na miesta postihnuté artrózou si každú noc prikladaj tieto obklady:<br>
+koreň lopúcha väčšieho,<br> 
+koreň kostihoja lekárskeho,<br> 
+koreň ibiša lekárskeho a<br> 
+listy brezy previsnutej<br> 
+namiešaj v pomere 2:1:2:1<br> 
+(odmerkou môže byť šálka).<br><br>
+
+PRÍPRAVA: Jednu polievkovú lyžicu zmesi vhoď do štvrť litra studenej vody a na miernom ohni zahrievaj na 70 až 80° C. Potom odstav z ohňa, lúhuj 20 minút a preceď.<br>
+Obklad nechaj pôsobiť celú noc. Spolu si urob 75 obkladov.<br>
+* Na celú chrbticu a obličky si každú druhú noc prikladaj obklady z tejto zmesi: vňať zlatobyle obyčajnej, 
+vňať baloty čiernej a vňať čiernohlávka obyčajného namiešané v pomere 2:1:2 
+(odmerkou môže byť šálka).<br><br>
+
+PRÍPRAVA: Dve polievkové lyžice zmesi zalej pol litrom vriacej vody, lúhuj 30 minút a preceď.
+Na chrbticu si prilož 40 obkladov, na obličky 80.<br>
+* Každý večer si rob kúpele rúk a nôh z tejto zmesi:<br>
+vňať vresa obyčajného,<br>
+koreň lopúcha plstnatého,<br> 
+kvety rumančeka pravého,<br> 
+kvety prútnatca metlového,<br> 
+kvety levandule úzkolistej<br> 
+namiešané v pomere 1:3:2:1:2<br> 
+(odmerkou môže byť napríklad šálka).<br><br>
+
+3. Stravovanie:<br>
+Obmedz pitie kávy, čierneho čaju, malinoviek i minerálok, konzumáciu prifarbovaných a chemicky konzervovaných potravín, nedozretého ovocia a výrobkov z bielej múky. Stravu si obohať o surové ovocie a zeleninu (nekombinuj ich navzájom), orechy, sezamové, tekvicové i slnečnicové semená, obilné klíčky, mliečne produkty, cibuľu. Ráno nalačno zjedz jednu kávovú lyžičku rybieho oleja a za hrsť tekvicových semien.<br><br>
+
+4. Šťavy:<br>
+* Citrónová (do 2dl vody vytlač 1 citrón).<br>
+* Višňová.<br>
+* Čerešňová.<br>
+Denne pi niektorú, v množstve aspoň 2dl. Miesto višňovej a čerešňovej šťavy môžeš denne skonzumovať pol kila višní alebo čerešní, v zimnom období pol litra zaváraných.<br><br>
+
+5. Prírodné preparáty:
+3xdenne 50mg Zinku a 50 000 m.j. Vitamínu A. Denne 200 až 300mg Vitamínu B6 a 1000mg prírodného Vitamínu C. Užívaj až do upravenia zdravotného problému.<br><br>
+ 
+6. Potrebná duchovná zmena:<br><br>
+NEBUĎ STRNULÝ A NAPÄTÝ, DÔVERUJ SEBE AJ ŽIVOTU, S RADOSŤOU PRIJÍMAJ VŠETKY NOVÉ SKUTOČNOSTI, VZDAJ SA ZASTARANÝCH ZVYKOV A NÁZOROV, NEBOJ SA ZAČAŤ ODZNOVA.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

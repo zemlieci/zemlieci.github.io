@@ -1,0 +1,97 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarkoidóza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Sarkoidóza</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+prekonaný zápal pMc, poškodený lymfatický systém, výrazne oslabenú obranyschopnosť, narušenú činnosť pečene, sleziny, obličiek a močového mechúra. Pozornosť treba venovať stavu chrbtice a blokádam bránice.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+30g listov slezu lesného,<br>
+30g koreňa púpavy lekárskej,<br>
+30g vňate repíka lekárskeho,<br>
+30g listov skorocelu kopijovitého,<br>
+25g vňate ľubovníka bodkovaného,<br>
+25g vňate zlatobyle obyčajnej,<br>
+25g listov žihľavy dvojdomej,<br>
+20g vňate pľúcnika lekárskeho,<br>
+20g vňate myšieho chvosta obyčajného,<br>
+20g vňate prasličky roľnej,<br>
+20g listov ostružiny černicovej,<br>
+15g vňate stavikrvu vtáčieho,<br>
+15g vňate fialky trojfarebnej,<br>
+15g listov orecha kráľovského a<br>
+10g vňate pamajoránu obyčajného.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Tri čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 10 minút a preceď. Pi po dúškoch do 19. hodiny. Po minutí zmesi si urob dvojtýždňovú prestávku a kúru takto zopakuj ešte trikrát. Potom dlhodobo pi ráno a večer po jednej šálke čaju.<br>
+Trikrát do týždňa si rob vaňový kúpeľ z tejto zmesi:<br>
+listy orecha kráľovského,<br>
+šišiek chmeľu obyčajného,<br>
+listy slezu lesného,<br>
+koreň kostihoja lekárskeho,<br>
+vňať prasličky roľnej,<br>
+vňať pamajoránu obyčajného a<br>
+vňať materinej dúšky obyčajnej<br> 
+namiešané v pomere 1:1:2:2:3:3:3 (odmerkou môže byť šálka).<br><br>
+
+Vaňový kúpeľ. Dovedna si urob 60 kúpeľov.<br>
+* Do 50ml nechtíkového gélu vmiešaj plastovou lyžičkou 5ml čistého oleja Tea tree. Takto pripravenou emulziou si dvakrát denne jemne natri celý hrudník, pravý bok (oblasť pečene) a ľavý bok (oblasť sleziny). Toto rob ešte mesiac po tom, ako budú lekárske výsledky negatívne. Dvakrát denne si jednou kvapkou oleja Tea tree potri okolie nosných dierok a trikrát denne si kvapni dve kvapky oleja na jazyk, zapi dvoma až tromi dúškami čaju a prehltni.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania.<br><br>
+
+4. Šťavy:<br>
+* Karotka 300g, špenát 200g.<br>
+* Karotka 300g, cvikla 100g, uhorky 100g.<br>
+* Šťava z jedného celého citróna na 100g postrúhaného, nevytlačeného chrenu.<br>
+*  Karotka 250g, zeler 150g, reďkovka 100g.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Podľa veku užívaj Golden Yaccu. Pri tomto prípravku zvýš príjem tekutín na 2 až 3 litre denne (nie minerálky !). Okrem toho trikrát denne uži po jednej tablete prírodného B-komplexu a prírodného Vitamínu C 1000 vyrobeného zo šípok. Dovedna využívaj po dvesto tabliet. Potom ber Vitamín Cdlhodobo po jednej tablete. Okrem toho užívaj aj L-lyzín - trikrát denne po jednej tablete, dovedna 200 tabliet. Pol roka ber aj po dve tablety Chlorelly a prípravku ABC Plus. Podľa návodu na obale využívaj 300ml Echinaceových kvapiek.<br><br>
+ 
+6. Potrebná duchovná zmena:<br><br>
+NEPOVAŽUJ ŽIVOT ZA BREMENO, NEBOJ SA ŽIŤ TAK, ABY SI BOL ŠŤASTNÝ, NEUTÁPAJ SA V SMÚTKU, DEPRESIÁCH, NEROB SI UŽ VOPRED ZBYTOČNÉ STAROSTI, VYTVÁRAJ OKOLO SEBA PROSTREDIE PLNÉ LÁSKY, HARMÓNIE A POKOJA.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

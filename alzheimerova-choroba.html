@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alzheimerova choroba</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Alzheimerova choroba</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+degeneráciu nervových buniek v mozgu, ubúdanie mozgovej hmoty, klesanie hladiny acetylcholínu, ktorý prenáša signály medzi nervovými bunkami alebo medzi bunkami nervov a svalov. Okrem toho však klesajú aj hladiny ostatných chemických látok prítomných v tomto orgáne. Táto choroba sa zväčša prejavuje až po šesťdesiatom roku života. Prvým príznakom ochorenia je zhoršovanie pamäti, zvýšená zábudlivosť, čo sa však od klasického zabúdania odlišuje v tom, že postihnutý trpí aj úzkosťou a depresiami. Pre tretiu fázu ochorenia sú charakteristické halucinácie, paranoidné bludy, neschopnosť udržať moč, stolicu. K prepuknutiu choroby prispieva okrem dedičnosti aj chorý vylučovací a črevný systém a narušený látkový metabolizmus tukov.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+30g vňate prasličky roľnej,<br>
+30g stielky pľuzgierky islandskej,<br> 
+30g listov žihľavy dvojdomej,<br>
+30g vňate zlatobyle obyčajnej,<br>
+30g listov jahody obyčajnej,<br>
+30g listov brezy previsnutej,<br>
+30g listov ostružiny malinovej,<br>
+20g vňate stavikrvu vtáčieho,<br>
+20g kvetov agátu bieleho,<br>
+20g vňate lipkavca syridlového,<br> 
+20g vňate repíka lekárskeho,<br> 
+20g listov medovky lekárskej,<br> 
+20g vňate ľubovníka bodkovaného,<br> 
+20g podzemku ihlice tŕnistej,<br> 
+15g kvetov hlohu jednosemenného,<br> 
+15g vňate jastrabiny lekárskej,<br> 
+15g kvetov prvosienky jarnej,<br> 
+10g koreňa horca žltého a<br>
+10g koreňa valeriány lekárskej.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 10 minút a preceď. Pi po dúškoch do 19. hodiny. Po troch týždňoch si urob týždňovú prestávku a kúru takto zopakuj ešte päť ráz. Potom vždy tri dni pi pol litra čaju pripraveného z jednej z bylín uvedených v zmesi. Vystriedaj všetky.<br>
+* Dvadsať minút pred každým hlavným jedlom uži na povzbudenie tráviacej sústavy po 15 karmelitánskych kvapiek.<br>
+* Okrem toho užívaj dva razy denne mumio s medom.<br><br>
+
+3. Stravovanie:<br>
+Potrebuješ najmä dostatok horčíka, vitamínu E a B6 Na zlepšenie činnosti čriev zjedz denne jednu polievkovú lyžicu pomletého semena ľanu siateho spolu s dvoma polievkovými lyžicami ovsených vločiek. Vločky nechaj napučať v mlieku alebo v jogurte. Tvoj jedálny lístok by mal obsahovať 90 percent surovej, t. j. nevarenej stravy. Vyhýbaj sa potravinám, ktoré sú kyselinotvorné.<br><br>
+
+4. Šťavy:<br>
+* 2 veľké mrkvy, 6 veľkých listov špenátu, 1/4 cvikly.<br>
+* 2 kiwi, 1 hruška, 2 marhule.<br>
+* 1 jablko, 1/4 cvikle, 1 stredne veľký petržlen.<br>
+* 2 veľké mrkvy, 8 kúskov brokolice, 1 avokádo.<br>
+* 1/2 stredne veľkého vodového melóna, 6 listov kučeravého kelu, 2 paradajky, 1 stonka zeleru.<br>
+* 1 jablko, 1 mrkva, 6 ks ružičkového kelu.<br>
+* 1 červená paprika, 6 listov šalátu, 1 veľká mrkva.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Tri mesiace užívaj denne po tri tablety týchto prírodných preparátov: B-komplex, Vitamín C 1000 zo šípok, Vitamín E 400, Selén, Betakarotén a Lucernové tablety.
+Potom pol roka denne zo všetkého po jednej tablete, iba Lucernové tablety naďalej tri denne. Navyše ešte začni užívať denne aj dve tablety prípravku ABC Plus.<br><br>
+Upozornenie: Pri užívaní Lucernových tabliet zvýš príjem tekutín na dva až tri litre za deň !  Nepi minerálky !
+Po doužívaní Lucernových tabliet začni brať dlhodobo Golden Yaccu. Pri tomto prípravku musíš denne takisto vypiť až dva litre tekutín, nie však minerálky !<br><br>
+
+7. Potrebná duchovná zmena:<br><br>
+PRESTAŇ POHŔDAŤ MALIČKOSŤAMI, UPUSTI OD NADMERNEJ NÁROČNOSTI, NECHCI PRIAM POSADNUTO VŠETKO A KAŽDÉHO OKOLO SEBA MENIŤ.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

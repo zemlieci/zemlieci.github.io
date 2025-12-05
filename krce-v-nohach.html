@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kŕče v nohách</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Kŕče v nohách</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+poškodený cievny systém, takže prietok krvi telom je blokovaný a svaly, nervy a kosti nôh sú nedostatočne zásobené okysličenou krvou. Okrem toho je zrejmá aj nerovnováha minerálnych látok v organizme, najmä sodíka, horčíka, vápnika, železa, medi a zinku, z vitamínov chýba najmä E. Prejavovať sa však môže aj porucha látkovej výmeny, pri ktorej hrá dôležitú úlohu acetylcholín. V prípade silnejšieho potenia chýba organizmu soľ (dopĺňať solením jedál morskou soľou). Okrem toho sa na svalových kŕčoch podieľa aj veľké nahromadenie kyseliny močovej vo svaloch, jednostranné zaťažovanie svalov pri práci a dlhodobom státí na jednom mieste.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+30g listov brezy previsnutej,<br>
+30g listov medovky lekárskej,<br>
+30g listov jahody obyčajnej,<br>
+30g kvetov pagaštanu konského,<br>
+30g koreňa púpavy lekárskej,<br>
+25g listov žihľavy dvojdomej,<br>
+25g vňate myšieho chvosta obyčajného,<br>
+20g listov mäty piepornej,<br>
+20g koreňa ihlice tŕnistej,<br>
+15g vňate pastierskej kapsičky obyčajnej,<br>
+15g kvetov hlohu jednosemenného,<br>
+10g vňate imela bieleho (bez bobúľ !) a<br>
+10g listov rozmarínu lekárskeho.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve zarovnané čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 10 minút a preceď. Pi denne po dúškoch do 19. hodiny. Po troch týždňoch si vždy urob týždňovú prestávku a takto pokračuj až do minutia zmesi. Potom si zaraď dvoj týždňovú prestávku a zmes namiešaj bez pastierskej kapsičkv a rozmarínu. Opäť pokračuj v trojtýždňových cykloch. Ďalšiu zmes namiešaj celú tak ako prvý raz.<br><br>
+
+* Na regulovanie tlaku sú vhodné kúpele rúk a nôh z tejto zmesi:<br>
+ROVNAKÉ DIELY<br>
+listov mäty piepornej,<br>
+vňate bazalky pravej,<br>
+vňate železníka lekárskeho,<br>
+kvetov rumanu rímskeho (prípadne rumančeka pravého),<br>
+blizny kukurice siatej (chemicky neošetrovanej,<br>
+čiže nie z poľa) a<br>
+kvetov hlohu jednosemenného.<br>
+Sedací kúpeľ. Celkove si urob 60 kúpeľov.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania Vhodné sú aj Kompletné živiny.<br><br>
+
+4. Šťavy:<br>
+* mrkvová 0,5 1.<br>
+* mrkvová 5dl, cviklová 1,5dl, uhorková 1,5dl.<br>
+* mrkvová 4,5dl, zelerová 2,5dl, petržlenová 0,5dl.<br>
+Denne pi niektorú.<br>
+
+5. Prírodné preparáty:<br>
+Pol roka užívaj denne po dve tablety týchto prírodných preparátov: ABC Plus, Rutín, Vitamín E 400, Lecitín 1 200. Potom štvrť roka denne zo všetkého po jednej tablete. Prípravok ABC Plus však v dávke jedna tableta denne užívaj dlhodobo. Okrem toho využívaj 400 tabliet Kalcium + Magnézium + Zinok (ráno a večer po dve tablety). Predtým vždy zjedz za hrsť orechov alebo obilninovú kašu alebo jedlo z rýb.<br><br>
+
+6. Iné rady:<br>
+Rob si striedavé kúpele končatín a dychové cvičenia. V posteli vždy lež tak, aby si mal nohy aspoň o 10 centimetrov vyššie ako telo. Počas dňa si pri sedení nohy vykladaj na stoličku. Rob cviky proti kŕčovým žilám. Dávaj si pozor na prechladnutia od nôh, spávaj v teplých ponožkách !<br><br>
+
+7. Potrebná duchovná zmena:<br><br>
+PREHODNOŤ, ČI SMER, KTORÝM KRÁČAŠ A NÁZORY, KTORÉ OBHAJUJEŠ SÚ V SKUTOČNOSTI DOBRÉ A SPRÁVNE. ČI V TVOJOM PARTNERSKOM VZŤAHU AJ VO VZŤAHOCH MEDZIĽUDSKÝCH NIEČO NEPOKRIVKÁVA. ČI ŽIJEŠ V SÚLADE S BOŽÍMI ZÁKONMI A UDRŽIAVAŠ ROVNOVÁHU SVOJHO SRDCA AJ MYSLE. NEOSPRAVEDLŇUJ CHYBY, KTORÝCH SA DOPÚŠŤAŠ, LEBO TI BRÁNIA V SPRÁVNEJ CESTE.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

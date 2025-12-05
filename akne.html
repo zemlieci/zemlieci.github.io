@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akné</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Akné</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+zlé trávenie, oslabenú činnosť vylučovacích orgánov a žliaz s vnútorným vylučovaním.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+30g vňate zlatobyle obyčajnej,<br>
+30g plodov ruže šípovej (šípky),<br>
+30g listov žihľavy dvojdomej,<br>
+20g koreňa čakanky obyčajnej,<br>
+20g koreňa ibiša lekárskeho,<br>
+10g listov šalvie lekárskej a<br>
+5g vňate paliny dračej.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej 3/4 litra vriacej vody, lúhuj päť minút a preceď do termosky.<br>
+* Pi po dúškoch, vždy štvrť litra, hodinu po hlavnom jedle. Po využívaní zmesi si urob mesiac prestávku a kúru zopakuj ešte trikrát.<br>
+* Na tvár si prilož dvakrát denne na hodinu obklady z tejto zmesi:<br>
+ROVNAKÉ DIELY<br>
+vňate myšieho chvosta obyčajného, kvetov rumančeka pravého, vňate prasličky roľnej, kvetov trnky obyčajnej, okvetných lupienkov ruže galskej, listov podbeľa liečivého a vňate levandule úzkolistej.<br><br>
+
+PRÍPRAVA: Dve čajové lyžičky zmesi zalej šálkou vriacej vody, lúhuj 10 minút a preceď.<br>
+* Trikrát denne si natri pleť citrónovou šťavou. Na umývanie pokožky používaj iba prevarenú vodu.<br>
+Pleťová voda: Dokonale premiešaj ROVNAKÉ DIELY kvetov podbeľa liečivého, vňate stavikrvu vtáčieho, podzemku pýru plazivého, vňate prasličky roľnej a vňate konopnice žltkastobielej.<br><br>
+
+PRÍPRAVA: Dve polievkové lyžice zmesi zalej štvrťlitrom vriacej vody, lúhuj 30 minút a preceď. Precedené bylinky opäť zalej štvrťlitrom vriacej vody, na miernom ohni var 15 minút a preceď. Oba výluhy zlej spolu, pridaj rovnaké množstvo 40-percentného liehu a filtruj cez biele plátno, kým nebude tekutina číra.<br>
+* Touto pleťovou vodou si dvakrát denne čisti pleť na tvári a miestach postihnutých akné.<br><br>
+
+3. Stravovanie:<br>
+Konzumuj ryby, pečeň, vajcia, žĺtok, maslo, smotanu, zeleninu so zelenými listami, žltú zeleninu, droždie, pivné droždie, fazuľu, hrozienka, žltý melón.<br>
+* Zo stravy vylúč čokoládu, kakao, bravčové mäso, živočíšne tuky, prepálené oleje, korenené a slané jedlá, pikantné syry, alkohol, kávu, čierny čaj, orechy, coca colu, citrusové ovocie. Pol roka aspoň raz do týždňa jedz iba surovú stravu (ovocie alebo zeleninu).<br><br>
+
+4. Šťavy:<br>
+* Mrkvová (piť ju môžeš v neobmedzenom množstve).<br>
+* Mrkvová 2,4dl, z hlávkového šalátu 1,2dl, špenátová 2,4dl.<br>
+* Mrkvová 3dl, špenátová 1,8dl.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Pol roka užívaj ABC plus (podľa návodu na obale); 2xdenne 400 IU Vitamínu E; 5 dní po 2 tablety Vitamínu A, potom 2 dni prestávka; 3xdenne 50mg chelátu Zinku pri jedle; 3xdenne 2 polievkové lyžice tekutého Acidofílu alebo 3xdenne 3-6 kapsúl Acidofílu. Užívaj až do upravenia zdravotného problému.<br><br>
+
+6. Potrebná duchovná zmena:<br><br>
+PRESTAŇ SA KRITIZOVAŤ A PONIŽOVAŤ, NEODMIETAJ SVOJE TELO AKO NIEČO ODPUDZUJÚCE A NEČISTÉ, ALE ZAČNI HO POVAŽOVAŤ ZA BOŽÍ CHRÁM, V KTOROM SÍDLI TVOJA DUŠA. VŠETKO, ČO ROBÍŠ, ROB POKOJNE, BEZ AGRESIVITY, HNEVU A ZATRPKNUTOSTI. ROZDÁVAJ DOBRO A LÁSKU.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

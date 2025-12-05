@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afty</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Afty</H1>
+		
+		1. Biopole upozorňuje najmä na:<BR>podráždenú a zapálenú žalúdočnú sliznicu, oslabenú činnosť žalúdka, žlčníka, pankreasu a obličiek, znečistenú krv, zápal v prínosových dutinách, ktorý sa rozpína a tlačí na podnebie, zápal sliznice čriev. Je potrebné skontrolovať stav chrupu (v ústach smie byť najviac jeden druh kovu) a urýchlene zmeniť stravovanie.<BR><BR>2. Odporúčaná fytoterapia:<BR>20g vňate nátržníka husieho,<BR>20g kvetov rumančeka pravého,<BR>20g koreňov čakanky obyčajnej,<BR>20g koreňov lopúcha väčšieho,<BR>20g kvetov bazy čiernej,<BR>20g vňate repíka lekárskeho,<BR>20g vňate myšieho chvosta obyčajného,<BR>15g listov mäty piepornej a<BR>15g vňate paliny dračej (estragón).<BR><BR>PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 10 minút a preceď.<BR>* Pol hodiny pred každým hlavným jedlom a hodinu po každom hlavnom jedle vypi po jednom decilitri tohto čaju. Zvyšok v priebehu dňa po dúškoch. Po minutí zmesi si urob mesiac prestávku a kúru takto zopakuj ešte päť ráz.<BR><BR>* Na vyplachovanie úst si priprav túto čajovú zmes: vňať paliny dračej, vňať nátržníka husieho, listy ibiša lekárskeho, listy slezu lesného, vňať lipkavca syridlového, koreň omanu pravého a vňať myšieho chvosta obyčajného namiešaj v pomere 1:2: 2:2:2:1:1<BR>(odmerkou môže byť napríklad šálka).<BR><BR>PRÍPRAVA: Jednu polievkovú lyžicu zmesi zalej pollitrom vriacej vody, lúhuj 30 minút a preceď.
+Ústnu dutinu si dôkladne vyplachuj dvoma až tromi dúškami tohto záparu tri razy denne. S výplachmi pokračuj aj po odstránení zdravotného problému ešte dva mesiace, dva razy denne.<BR><BR>* Z tohto istého záparu si prikladaj každý večer na hodinu obklady na prínosové dutiny.<BR><BR>POSTUP: Do záparu namoč tampóny z gázy alebo plátna, prilož vyžmýkané na dutiny a tvár prekry uterákom. Počas pôsobenia obkladu zostaň na lôžku. Obklady si dávaj dovtedy, kým budú pretrvávať zdravotné problémy.<BR><BR>* V čase výskytu si afty potieraj propolisovou tinktúrou - viď tinktúry, alebo kvapkami zo Švédskych bylín (dostať ich v lekárni).<BR>* Každý večer si ústa vyplachuj aj prípravkom Silicea balzam, zriedeným vodou v pomere 1:3. Prípravok dostať v lekárni.<BR>* Po zmiznutí áft si aspoň mesiac ošetruj ústnu dutinu oboma výplachmi dva až tri razy denne.<BR><BR>3. Stravovanie:<BR>Strava musí obsahovať dostatok vitamínov C a B. Nejedz kyslé ani dráždivé jedlá, to isté platí o nápojoch. Úľavu prinášajú chladené nápoje.<BR><BR>4. Šťavy:<BR>* z moruše bielej alebo čiernej 2dl.<BR>* broskyňová 2dl.<BR>* mrkvová 2dl.<BR>* zelerová 1dl.<BR>* jablková 2dl.<BR>* hrušková 2dl.<BR>* melónová 2dl.<BR>* pomarančová 2dl.<BR>* citrónová (do 2dl vody vytlač 1 citrón).<BR>Denne pi niektorú.<BR><BR>5. Prírodné preparáty:<BR>Pol roka užívaj: Vitamín C 1000 zo šípok - dve tablety denne. Selén - dve tablety denne po jedle. Zinok - ako Selén. Chromax- dva-tri razy denne po jednej tablete. Prírodný B-komplex- dva mesiace dva razy denne po jednej tablete po jedle, potom jednu tabletu denne.<BR><BR>6. Iné rady:<BR>Pri každom jedle si na zlepšenie trávenia škrabkaj jemným tlakom cez šaty žalúdočnú jamku (plexus solaris). Dbaj na to, aby jedlo bolo čisté. Najmä ovocie a zeleninu vždy dôkladne umy.<BR><BR>7. Potrebná duchovná zmena:<BR><BR>NEPRECHOVÁVAJ V SEBE MYŠLIENKY NAPLNENÉ ZLOBOU A TÚŽBOU PO ODPLATE. UTÍŠ SA, DOPRAJ ĽUĎOM AJ SVOJEJ DUŠI POKOJ. KRÁČAJ ŽIVOTOM S VIEROU V DOBRO. NEZAMERIAVAJ SA IBA NA SPOTREBNÉ VECI A TELESNÉ RADOSTI. NEBOJ SA VYSLOVIŤ SVOJ NÁZOR, NO VŽDY MYSLI NA TO, ABY SI SLOVAMI ANI SKUTKAMI NEUBLIŽOVAL SEBE ANI INÝM ĽUĎOM.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

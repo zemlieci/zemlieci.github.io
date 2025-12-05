@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mozgová príhoda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Mozgová príhoda</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+poškodený cievny systém, zvýšenú hladinu tuku v krvi, zlú filtračnú schopnosť obličiek, tvorbu kamienkov z kyseliny močovej v obličkách, kolísavý krvný tlak, narušenú činnosť pečene, srdca, perikardu, nervového systému.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+čaj z vňate imela bieleho (bez bobúľ).<br>
+PRÍPRAVA A UŽÍVANIE: Jednu kopcovitú čajovú lyžičku imela zalej štvrť litrom studenej vody a lúhuj celú noc. Ráno prihrej vo vodnom kúpeli a preceď. Šesť týždňov pi trikrát denne (ráno nalačno, hodinu po obede a večer, najneskôr dve hodiny pred spaním) 1,5 decilitra tohto čaju.<br>
+Potom čaj pi takto: mesiac ráno a večer, dva týždne prestávka, mesiac iba ráno jednu šálku.<br><br>
+
+* Táto kúra je vhodná aj ako prevencia mozgovej príhody.<br>
+Okrem čaju z imela si namiešaj aj túto čajovú zmes: 20g vňate myšieho chvosta obyčajného,<br>
+20g vňate nátržníka husieho,<br>
+20g vňate fialky trojfarebnej,<br>
+20g vňate veroniky lekárskej,<br>
+15g vňate žihľavy dvojdomej,<br>
+15g vňate čistca rovného,<br>
+15g vňate Ľubovníka bodkovaného,<br>
+10g listov šalvie lekárskej a<br>
+10g listov medovky lekárskej.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej 3/4 litra vriacej vody, lúhuj 10 minút a preceď do termosky. Pi celý deň po dúškoch. Po mesiaci si vždy urob týždňovú prestávku a kúru takto zopakuj ešte šesťkrát. Potom pol roka denne vypi po dúškoch pol litra čaju pripraveného podobným spôsobom, ale iba z jednej byliny (teda každý deň použi inú bylinu z uvedenej zmesi).<br><br>
+
+* Ochrnutím postihnutú časť tela si dvakrát denne dlhodobo masíruj tinktúrou z pastierskej kapsičky. Okrem toho sú vhodné aj tinktúry z týchto bylín: archangelika, hloh, kostihoj, medovka, šalvia, ľubovník.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania.<br><br>
+
+4. Šťavy:<br>
+mrkvová, špenátová, zelerová, zo žeruchy, z petržlenovej vňate, cviklová, z hlávkového šalátu.<br>
+Denne pi niektorú, v množstve aspoň 2dl.<br><br>
+
+5. Prírodné preparáty:<br>
+Pol roka užívaj Lecitín 1 200 - trikrát denne po dve tablety, potom pol roka trikrát denne po jednej tablete. Rutín - tri tablety denne, potom pol roka dve tablety denne. Prírodný B-komplex, prírodný Vitamín C 1 000, Antioxidant, Vitamín E 400 - dve tablety denne, potom dlhodobo jednu tabletu denne.<br><br>
+
+6. Potrebná duchovná zmena:<br><br>
+NEPOVAŽUJ SVOJ ŽIVOT A SEBA V ŇOM ZA NIEČO, ČO SA NEDÁ ZMENIŤ, NEKONAJ STEREOTYPNE, PODĽA STARÝCH ODSKÚŠANÝCH METÓD, POCHOP, ŽE V ŽIVOTE SÚ VECI PODSTATNÉ AJ NEPODSTATNÉ A NAUČ SA ICH ROZLIŠOVAŤ. VYSTRÍHAJ SA CHAMTIVOSTI, LAKOMSTVA, ŽIARLIVOSTI, ĽAHKO SA PRISPÔSOBUJ NOVÝM VECIAM, NEVZDÁVAJ SA, NEKAPITULUJ PRED PROBLÉMAMI. POMÁHAJ ĽUĎOM NEZIŠTNE, BEZ BOČNÝCH ÚMYSLOV, UPRAV SVOJU ŽIVOTNÚ CESTU TAK, ABY SI RÁSTOL DUCHOVNE.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sklerodermia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Sklerodermia</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+narušenú činnosť tráviacich a vylučovacích orgánov, narušený metabolizmus vápnika, vyskočené stavce na chrbtici, zlý obeh krvný aj lymfatický. Pozornosť treba venovať hladine hormónov a vitamínov.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+20g koreňa púpavy lekárskej,<br>
+20g koreňa lopúcha väčšieho,<br>
+20g listov jahody obyčajnej,<br>
+20g plodov ruže šípovej (šípky),<br>
+15g vňate imela bieleho,<br>
+15g vňate jastrabiny lekárskej,<br>
+15g kvetov hlohu jednosemenného,<br>
+15g plodov fenikla obyčajného,<br>
+15g vňate stavikrvu vtáčieho,<br>
+15g podzemku pýru plazivého,<br>
+10g listov medovky lekárskej,<br>
+10g listov skorocelu kopijovitého,<br>
+5g koreňa valeriány lekárskej a<br>
+2,5g vňate ruty voňavej.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve zarovnané čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 10 minút a preceď do termosky. Ráno vypi dve šálky čaju, zvyšok popoludní do 18. hodiny. Po troch týždňoch si urob týždňovú prestávku a opäť pokračuj rovnakým spôsobom až do minutia zmesi.<br>
+Potom zaraď dvojtýždňovú prestávku a namiešaj si novú zmes bez ruty, valeriány a imela. Čaj pi tak ako predtým.
+Po minutí tejto druhej zmesi pi dlhodobo trikrát denne dve šálky čaju zloženého z rovnakých dielov kvetov nechtíka lekárskeho, vňate prasličky roľnej, vňate myšieho chvosta obyčajného, listov žihľavy dvojdomej a kvetov bazy čiernej.<br><br>
+
+* Celé telo si dvakrát denne jemne masíruj jablčným octom.<br>
+* Trikrát do týždňa si urob vaňový kúpeľ z tejto zmesi:<br>
+ROVNAKÉ DIELY<br>
+kvetov hlohu jednosemenného,<br>
+listov brezy previsnutej,<br>
+výhonkov smreku,<br>
+vňate čistca rovného,<br>
+vňate pamajoránu obyčajného a<br>
+listov slezu lesného.<br>
+Vaňový kúpeľ.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania.<br><br>
+
+4. Šťavy:<br>
+uhorková, papriková, cviklová, petržlenová, špenátová, jablková, mrkvová, jahodová, brusnicová.<br>
+Denne pi niektorú, v množstve aspoň 2dl.<br><br>
+
+5. Prírodné preparáty:<br>
+Podľa veku užívaj Golden Yaccu. Pri tomto prípravku zvýš príjem tekutín na 2 až 3 litre denne (nie minerálky !). Okrem toho pol roka ber denne po 3 tablety ABC Plus, Rutín, Vitamín E 100, Chlorella, RNA-DNA, Lecitín 1 200. Potom ešte pol roka po dve tablety denne.<br><br>
+ 
+6. Potrebná duchovná zmena:<br><br>
+ČO NAJSKÔR SA ZBAV POCITU, ŽE ŤA NIEKTO OHROZUJE A CHCE TI UBLÍŽIŤ, NEBOJ SA ZMENIŤ STARÉ NÁVYKY A PROSTREDIE, V KTOROM ŽIJEŠ. NEBOJ SA NADVÄZOVAŤ KONTAKTY S ĽUĎMI, NEUZAVIERAJ SA PRED SVETOM AKO SLIMÁK DO ULITY, ALE BUĎ INICIATÍVNY A ÚSTRETOVÝ. S POTEŠENÍM A LÁSKOU PRIJÍMAJ VŠETKO POZITÍVNE, ČO TI ŽIVOT PONÚKA.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

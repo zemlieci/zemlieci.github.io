@@ -1,0 +1,97 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tlaky v hlave a záhlaví</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Tlaky v hlave a záhlaví</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+vysunuté stavce v krčnej chrbtici, ktoré tlačia na miechu a medzistavcové nervy, spomalenú činnosť žalúdka, poškodený cievny systém, zlé vylučovanie, znečistenú krv. K tlakom sa nezriedka pridávajú závraty, bolesti v krčnej chrbtici aj v hlave, chvenie celého tela, búšenie srdca a podobne. U lekára si daj vyšetriť mozog a srdce !  Okrem toho sa na závratoch môžu podieľať aj nahromadené odpadové látky, anémia a poruchy vo vnútornom uchu.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+ROVNAKÉ DIELY<br>
+listov medovky lekárskej,<br>
+listov orecha vlašského,<br>
+listov slezu lesného,<br>
+kvetov nechtíka lekárskeho,<br>
+kvetov bazy čiernej,<br>
+vňate repíka lekárskeho,<br>
+vňate prasličky roľnej,<br>
+vňate myšieho chvosta obyčajného,<br>
+vňate ľubovníka bodkovaného a<br>
+plodov fenikla obyčajného.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 15 minút a preceď. Denne môžeš po dúškoch vypiť aj liter a pol tohto čaju. Po mesiaci si urob týždňovú prestávku a kúru takto zopakuj ešte štyri razy. Potom pi preventívne každý deň liter čaju vždy z inej byliny tejto zmesi.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania. Sedemdesiat percent stravy by si mal prijímať v surovom stave, t. j. bez tepelnej úpravy. Tak tvoje telo dostane potrebnú energiu. Jedz cesnak, cibuľu, pažítku, pór.<br><br>
+
+4. Šťavy:<br>
+* jablková 2dl.<br>
+* mrkvová 2dl.<br>
+* cviklová 2dl.<br>
+* hroznová 2dl.<br>
+* hrušková 2dl.<br>
+* zelerová 1dl.<br>
+* z hlávkového šalátu 1dl.<br>
+* uhorková 2dl.<br>
+* petržlenová 0,5dl.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Pol roka užívaj po dve tablety denne: ABC Plus, Triple potency lecitín, RNA-DNA. Okrem toho využívaj štyri päť gramové balenia mumia s medom.<br><br>
+
+6. Iné rady:<br>
+Krčnú aj chrbtovú časť chrbtice si mesiac masíruj olejom. Potom si ju daj napraviť u ortopéda. Aspoň raz do týždňa si rob očistu čriev. Stimulujúce masáže a Cviky na uvoľnenie krčnej chrbtice. Raz do týždňa choď k masérovi na masáž celého tela. Venuj sa rekreačnému plávaniu, bicyklovaniu, turistike.<br>
+Denne choď na prechádzku tam, kde je dostatok zelene a čistý vzduch.<br>
+* Už neraz sa ukázalo, že závraty môže spôsobiť zvýšený tlak nahromadeného ušného mazu na bubienok.<br><br>
+
+Ušný maz si preto odstraňuj nielen umývaním uší vodou, ale aj raz za deň takto:<br>
+1. Osem ráz za sebou v pol minútových intervaloch si tri hrbolček za uchom.<br>
+2. Ušný lalôčik ohýbaj dopredu a dozadu (osem ráz).<br>
+3. Ušným lalôčikom otáčaj v smere hodinových ručičiek (osem ráz).<br>
+Tento spôsob očisty zmierňuje aj bolesť a hučanie v ušiach.<br><br>
+
+7. Potrebná duchovná zmena:<br><br>
+NEODMIETAJ NÁZORY INÝCH ĽUDÍ, NEZAKRÝVAJ SI PRED NIMI OČI ANI NEZAPCHÁVAJ UŠI. NENAHÁŇAJ SA BEZ USTANIA ZA ČÍMSI, ALE ZASTAV SA, UPOKOJ A ZAČNI NA SVET POZERAŤ Z OPTIMISTICKEJŠEJ STRÁNKY. NENIČ A NEKOMPLIKUJ ŽIVOT SEBE ANI INÝM ĽUĎOM. KĽÚČOM K VYZDRAVENIU NIE JE PLAČ, POHODLNOSŤ, ILÚZIE, ZMÄTOK, ALE LÁSKA A TRPEZLIVOSŤ.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

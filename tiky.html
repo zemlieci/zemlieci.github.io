@@ -1,0 +1,96 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiky</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Tiky</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+chronický zápal v močovom mechúre a močových cestách, ktorý zvyšuje podráždenosť a precitlivelosť, čo vyústilo do neurózy. Vnútorného napätia sa zbavuješ napríklad zášklbmi hlavy, mimovoľnými pohybmi rúk, častým žmurkaním... Okrem toho tvojmu organizmu chýba veľa vitamínov (najmä skupiny B a vitamín C), ako aj minerálov (predovšetkým horčík a vápnik). To všetko, spolu so zlým trávením aj vylučovaním, ešte väčšmi stupňuje neurózu.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+30g vňate repíka lekárskeho,<br>
+30g listov medovky lekárskej,<br>
+30g listov jahody obyčajnej,<br>
+30g listov ostružiny černicovej (alebo malinovej),<br>
+30g listov ríbezle čiernej,<br>
+20g vňate prasličky roľnej,<br>
+20g vňate zlatobyle obyčajnej,<br>
+20g vňate fialky trojfarebnej,<br>
+10g koreňa valeriány lekárskej,<br>
+10g vňate ľubovníka bodkovaného,<br>
+10g vňate srdcovníka bodkovaného,<br>
+10g vňate stavikrvu vtáčieho a<br>
+10g kvetov levandule úzkolistej.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 10 minút a preceď. Pi denne po dúškoch celý deň. Po štyroch týždňoch si urob dvojtýždňovú prestávku a kúru takto zopakuj ešte dva razy. Potom pi preventívne každý deň tri razy po šálke čaju.<br><br>
+
+* Dva razy do týždňa si rob Vaňový kúpeľ z tejto zmesi:<br>
+kvety levandule úzkolistej,<br>
+vňať železníka lekárskeho,<br>
+kvety rumančeka pravého,<br>
+listy mäty piepornej,<br>
+listy šalvie lekárskej,<br>
+vňať petržlenu záhradného a<br>
+vňať prasličky roľnej<br> 
+namiešaj v pomere 1:1:3:1:1:1:3<br> 
+(odmerkou môže byť napríklad šálka).<br>
+Užívaj Liek z aloe arborescens.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania. Výrazne obmedz biele pečivo, knedle, cukor, zákusky či iné sladkosti a alkohol, lebo znižujú hladinu horčíka !  Dostatok horčíka aj vápnika ti poskytnú Kompletné živiny. Zlepšenie by mohlo nastať už po týždni ich konzumovania.<br><br>
+
+4. Šťavy:<br>
+* mrkvová 5dl, cviklová 1,5dl, uhorková 1,5dl.<br>
+* mrkvová 4,5dl, zelerová 2,5dl, petržlenová 1dl.<br>
+Denne pi niektorú, mrkvovej aspoň 0,5 l.<br><br>
+
+5. Prírodné preparáty:<br>
+Pol roka užívaj: Stres B-komplex- 3x1 tabletu denne. Prírodný Vitamín C 1000 zo šípok - 3x1 tabletu denne. Mumio s medom (celkove využívaj dve päť gramové balenia mumia; postupuj podľa kap. (147). Súčasne dva mesiace užívaj aj: Kalcium + Magnézium + Zinok (2x1 tabletu denne). Predtým vždy zjedz za hrsť orechov alebo obilninovú kašu alebo jedlo z rýb.<br><br>
+
+6. Iné rady:<br>
+Dávaj si pozor na prechladnutia, najmä od nôh, vyhýbaj sa konfliktným a stresovým situáciám. Užívaj počas preventívneho pitia čaju na liečbu tikov aj Karmelitánske kvapky. Nezapíjaj ich však týmto čajom, ale vodou !  Rob dychové cvičenia a kúpeľ na posilnenie biopoľa. Na hlboké aj slabé vdychovanie používaj levanduľový olej.<br><br>
+
+7. Potrebná duchovná zmena:<br><br>
+NEBUĎ AKO STEBLO TRÁVY VO VETRE, KTORÉ SA KLÁTI RAZ NA JEDNU A POTOM ZASA NA DRUHÚ STRANU. NEPOSILŇUJ V SEBE OBAVY, ALE PRÁVE OPAČNE, SEBAISTOTU A SEBADÔVERU, PRETOŽE PRÁVE TIE TI VEĽMI CHÝBAJÚ. NEODKLADAJ RIEŠENIE PROBLÉMOV, NEMYSLI SI, ŽE SVET JE ROZHÁDZANÝ BEZ LADU A SKLADU. UROB SI PORIADOK V HODNOTÁCH, PRIORITÁCH A V CELKOVOM SPÔSOBE ŽIVOTA.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

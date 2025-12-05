@@ -1,0 +1,90 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ochrnutie spôsobené úrazom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Ochrnutie spôsobené úrazom</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+poškodenú chrbticu a miechu, blokované trávenie a vylučovanie.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+ROVNAKÉ DIELY<br>
+listov mäty piepornej,<br>
+listov medovky lekárskej,<br>
+listov slezu lesného,<br>
+listov ibiša lekárskeho,<br>
+listov žihľavy dvojdomej,<br>
+vňate čakanky obyčajnej,<br>
+vňate jastrabiny lekárskej,<br>
+vňate vrbovky malokvetej,<br>
+vňate repíka lekárskeho,<br>
+vňate myšieho chvosta obyčajného,<br>
+vňate prasličky roľnej,<br>
+vňate zlatobyle obyčajnej,<br>
+podzemku pýru plazivého a<br>
+koreňa púpavy lekárskej.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Tri čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 10 minút a preceď. Pi po dúškoch celý deň. Po mesiaci si urob týždňovú prestávku. Potom pi mesiac čaj zo zmesi z prvých siedmich bylín, opäť týždeň prestávka a opäť čaj z ďalších siedmich bylín v poradí. Takto meň zmes dlhodobo. Najskôr štrnásť bylín, prestávka, prvých sedem bylín, prestávka, druhých sedem bylín, prestávka a odznova.<br>
+* Celú chrbticu si striedavo viackrát denne zľahka masíruj kostihojovou, propolisovou a mumiovou masťou.<br><br>
+
+Raz za deň si ju natri gélom z nechtíka, do ktorého na 50ml pridaj po 5 kvapiek levandulového, mätového a rozmarínového oleja a oleja Tea tree. Pokračuj v rehabilitačných cvičeniach a navštevuj lekára, ktorý sa zaoberá aurikulo terapiou - ušnou akupunktúrou.<br>
+* Minimálne tri až päť ráz za deň rob toto dychové cvičenie: po dobu piatich až siedmich sekúnd sa pomaly a zhlboka nadýchni, tri až päť sekúnd dych zadrž a potom pomaly päť až sedem sekúnd vydychuj. Opakuj vždy päťkrát za sebou.
+Neskôr môžeš nádychy a výdychy predlžovať na desať až pätnásť sekúnd a zadržanie dychu na sedem sekúnd. Dýchacie cviky rob na čerstvom vzduchu alebo v dobre vyvetranej miestnosti. Pravidelným cvičením si zlepšíš funkčnosť a kapacitu pľúc a lepšie okysličíš krv. Dávaj si pozor na prechladnutia, najmä od nôh, spávaj v teplých bavlnených ponožkách.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania. Nepi alkohol, nefajči !<br><br>
+
+4. Šťavy:<br>
+* Mrkvová (aspoň pol litra denne).<br>
+* Karotka 300g, špenát 200g.<br>
+* Karotka 300g, zeler 150g, petržlen 50g.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+ABC Plus - dve tablety denne. RNA-DNA - trikrát denne po jednej tablete. Lecitín 1200 - trikrát denne po jednej tablete (všetko dlhodobo). Vhodné je aj užívanie prípravku Golden Yacca (dávky konzultuj so svojím ošetrujúcim lekárom). Príjem tekutín pri tomto prípravku zvýš na 2 až 3 litre denne (nie minerálky !).<br>
+V prípade vytvorenia dekubitov si nasaď po dve tablety prírodného B-komplexu, Vitamínu C 1000, Vitamínu E 400, Selénu a Zinku. Oblasť dekubitu si ošetruj päť percentným roztokom oleja Tea tree.<br><br>
+
+6. Potrebná duchovná zmena:<br><br>
+NEPODLIEHAJ BEZMOCNOSTI, SKLAMANIU, REZIGNÁCII, NEVRACAJ SA DO MINULOSTI. NEBOJ SA OKOLIU OTVORENE POVEDAŤ ČO ŤA TRÁPI A ČO K SVOJMU ŽIVOTU POTREBUJEŠ. NEZŽÍVAJ SA S MYŠLIENKAMI, ŽE SVET JE PLNÝ NÁSILIA A AGRESIVITY A ŽE SA PROTI TOMU NEDÁ NIČ ROBIŤ. VÁŽ SI ĽUDÍ, KTORÍ DOSIAHLI ŽIVOTNÉ ÚSPECHY VLASTNOU HÚŽEVNATOSŤOU, UBEZPEČUJ SÁM SEBA, ŽE MÁŠ DOSTATOK SÍL A SCHOPNOSTÍ PRISPÔSOBIŤ SA RÔZNYM SITUÁCIÁM, VYTVÁRAJ SI V MYŠLIENKACH POZITÍVNE CIELE A ŠŤASTNÚ BUDÚCNOSŤ. PRESVIEDČAJ SÁM SEBA, ŽE SI ZASLÚŽIŠ DOBRO, A NIE TREST !</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

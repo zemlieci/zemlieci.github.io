@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolesti v kolenách</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Bolesti v kolenách</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+pretrvávajúci zápal v obličkách a močových cestách, jednotvárnu a málo výživnú stravu, zlé trávenie, narušenú látkovú výmenu, znečistenú krv. Organizmu chýba najmä vápnik, horčík, kremík, síra, zinok, fosfor, jód, vitamíny D, C, B aj kyselina listová. Ich nedostatok podstatne oslabuje kosti, šľachy a svaly.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+10g kvetov rumanu rímskeho (alebo rumančeka pravého),<br>
+10g kvetov levandule úzkolistej,<br> 
+20g vňate fialky trojfarebnej,<br> 
+20g listov šalvie lekárskej,<br> 
+20g vňate rozmarínu lekárskeho a<br> 
+30g koreňa ihlice tŕnistej.<br>
+
+PRÍPRAVA A UŽÍVANIE: Dve zarovnané čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 10 minút a preceď do termosky. Popíjaj počas dňa po dúškoch. Po minutí zmesi si urob tri týždne prestávku a kúru takto zopakuj ešte dvakrát.<br>
+* Raz do týždňa si urob kúpeľ v soli z Mŕtveho mora. Urýchli sa tým vyplavovanie škodlivín z tela. Postupuj podľa priloženého návodu.<br><br>
+
+3. Stravovanie:<br>
+Obmedz pitie zrnkovej kávy, čierneho čaju, malinoviek, minerálok, prifarbovaných a chemicky konzervovaných potravín, prezretého a nedozretého ovocia a výrobkov z bielej múky. Stravu si obohať o surové ovocie a zeleninu (nekombinuj ich navzájom), orechy, sezamové, tekvicové, slnečnicové semená, obilné klíčky, mliečne produkty. Jedz veľa cibule. Dodáš si tak do organizmu síru, ktorá je potrebná na obnovenie kĺbového mazu. Trikrát denne pol hodiny pred jedlom zjedz štyri horčičné semená a vypi šťavu z jedného väčšieho zdravého zemiaka. Denne zjedz za hrsť tekvicových semien a ráno nalačno uži aj za kávovú lyžičku rybieho tuku.<br><br>
+
+4. Šťavy:<br>
+* mrkvová 2dl až pol litra.<br>
+* cviklová 2dl.<br>
+* uhorková 2dl.<br>
+* špenátová 1dl.<br>
+* zelerová 1dl.<br>
+* z hlávkového šalátu 1dl.<br>
+Tieto šťavy pomáhajú obnovovať kĺbové mazivo.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Tri mesiace užívaj: Kalcium + Magnézium + Zinok (2x1 tabletu denne. Pred užitím tohto prípravku vždy zjedz za hrsť orechov alebo jedlo z ryby alebo obilninovú kašu). Lucerna (3x1 tabletu denne, pol roka. Pri tomto prípravku zvýš príjem tekutín na dva až tri litre denne, nie však minerálky.) Lecitín 1 200 (3x2 tablety denne, pol roka). Želatína (3x1 tabletu denne, pol roka). ABC Plus (3x1 tabletu denne, pol roka).<br><br>
+
+6. Iné rady:<br>
+V starých receptároch sa na obnovenie mazu v kolenách aj v ďalších kĺboch uvádza tento postup:
+Do každej ponožky si nasyp jednu čajovú lyžičku práškovej síry (dostať v lekárni), obuj si topánky a choď v nich celý deň. Dávaj si pozor na prechladnutia od nôh, spávaj v teplých bavlnených ponožkách. Viac ráz za deň prešľapuj z jednej nohy na druhú tak, že obe nohy budeš mať čo najviac napnuté, bez pokrčenia kolien.<br><br>
+
+7. Potrebná duchovná zmena:<br><br>
+TAM, KDE CHÝBA VNÚTORNÁ POKORA, SA O TO VÄČŠMI UDOMÁCŇUJE TVRDOSŤ !  JE DOBRÉ, KEĎ NAPĹŇAŠ SVOJE PREDSTAVY, ALE NEMAL BY SI TO ROBIŤ NA ÚKOR TOHO, ŽE PRESTÁVAŠ VNÍMAŤ POTREBY SVOJHO PARTNERA/KY. NEMYSLI SI, ŽE ĽUDIA MUSIA VŽDY TANCOVAŤ TAK, AKO TY PÍSKAŠ !  NEBUĎ AGRESÍVNY VOČI TÝM, KTORÍ TI UBLÍŽILI, UČ SA ODPÚŠŤAŤ. VŠETKO, ČO ROBÍŠ, ROB S LÁSKOU, NIE Z PRINÚTENIA.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

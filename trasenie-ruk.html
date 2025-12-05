@@ -1,0 +1,93 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trasenie rúk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Trasenie rúk</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+veľký nedostatok horčíka, poruchu v metabolizme vápnika, preťažené obličky, v ktorých sa hromadia vápenaté usadeniny, vyskočené stavce (predovšetkým krčná a hrudná časť chrbtice).<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+20g listov brezy previsnutej,<br>
+20g vňate prasličky roľnej,<br>
+20g vňate zlatobyle obyčajnej,<br>
+20g vňate čakanky obyčajnej,<br>
+20g vňate stavikrvu vtáčieho,<br>
+20g blizien kukurice siatej,<br>
+15g podzemku pýru plazivého,<br>
+15g vňate pupenca roľného,<br>
+15g vňate ľubovníka bodkovaného,<br>
+15g kvetov levandule úzkolistej,<br>
+15g listov medovky lekárskej,<br>
+15g vňate materinej dúšky obyčajnej a<br>
+10g plodov kôpru voňavého.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 10 minút a preceď do termosky. Ráno vypi šálku čaju, popoludní pi zvyšný čaj po dúškoch do 18. hodiny. Po troch týždňoch si urob týždňovú prestávku a kúru takto zopakuj ešte päťkrát.<br>
+Do 50ml ľubovníkového oleja pridaj 20 kvapiek levanduľovej silice a dokonale premiešaj. Pred každým použitím obsah pretrep. Používaj raz až dva razy denne na masáž chrbtice a rúk.<br>
+* Masáže môžeš striedať s kúpeľmi rúk a nôh z tejto zmesi:<br>
+ROVNAKÉ DIELY<br>
+ľubovníka bodkovaného a<br>
+levandule úzkolistej.<br>
+Sedací kúpeľ. Aplikuj si ich dlhodobo.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania.<br><br>
+
+4. Šťavy:<br>
+* Hroznová.<br>
+* Jablková.<br>
+* Mrkvová (každú pi denne v množstve aspoň 2dl).<br>
+* 1/4 cvikle, 1/2 zeleru, 1/4 veľkej uhorky.<br>
+* 1/2 zeleru, 2 veľké mrkvy.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+B vitamínový komplex prírodný 3x denne 1 tabletu (až do úpravy zdravotného problému). Pol roka ABC Plus - dve tablety denne po jedle. Kalcium + Magnézium - jednu tabletu denne. Predtým vždy zjedz jedlo z ovsených vločiek, obilné klíčky, za hrsť orechov alebo obilninovú kašu. Lecitín 500 - dvakrát denne po dve tobolky. Po polroku ber dlhodobo prípravok ABC Plus a Lecitín v polovičných dávkach.<br><br>
+
+6. Iné rady:<br>
+Dávaj si pozor na prechladnutie od nôh, spávaj v ponožkách a čo najďalej od okna.<br><br>
+
+7. Potrebná duchovná zmena:<br><br>
+NEIZOLUJ SA OD ĽUDÍ, S KTORÝMI ŽIJEŠ, NEZVELIČUJ MALIČKOSTI, NEMAJ STRACH Z RÔZNYCH ŽIVOTNÝCH SITUÁCIÍ. NEVYNUCUJ SI LÁSKU TRUCOVANÍM, NETÚŽ SI PRIVLASTNIŤ A NAVŽDY UDRŽAŤ NIEČO ALEBO NIEKOHO, DOPRAJ SEBE AJ INÝM SLOBODU V ROZHODOVANÍ A KONANÍ.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

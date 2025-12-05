@@ -1,0 +1,98 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seboroidná dermatitída</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Seboroidná dermatitída</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+celkovú poruchu metabolizmu tukov, poruchu činnosti žalúdka, pečene, žlčníka, čriev, obličiek a narušenú hladinu hormónov.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+na podporenie a zlepšenie trávenia užívaj trikrát denne pol hodiny pred jedlom po 35 Karmelitánskych kvapiek).<br>
+Po dvoch mesiacoch užívania si urob dvojtýždňovú prestávku a kúru takto zopakuj ešte štyrikrát.<br>
+ČAJOVÁ ZMES:<br>
+30g koreňa púpavy lekárskej,<br>
+30g listov žihľavy dvojdomej,<br>
+30g koreňov lopúcha väčšieho,<br>
+25g vňate myšieho chvosta obyčajného,<br>
+25g listov ibiša lekárskeho,<br>
+25g listov ríbezle čiernej,<br>
+25g listov slezu lesného,<br>
+20g kvetov rumana rímskeho alebo rumančeka pravého,<br>
+20g listov mäty piepornej,<br>
+20g vňate materinej dúšky tymiánovej,<br>
+10g vňate boráka lekárskeho a<br>
+5g vňate lastovičníka väčšieho.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 10 minút a preceď do termosky. Pi po dúškoch celý deň do 19. hodiny, jeden a pol až dva litre čaju denne. Má dobré detoxikačné účinky !  Po minutí zmesi si urob dvojtýždňovú prestávku a ďalšiu zmes si už namiešaj bez lastovičníka. Dovedna kúru zopakuj päťkrát. Až pri štvrtom miešaní zmesi opäť použi lastovičník.<br>
+Vlasy si umývaj šampónom obsahujúcim olej Tea tree.<br><br>
+
+* Na posledné opláchnutie hlavy použi zápar pripravený z tejto zmesi:<br>
+koreň lopúcha väčšieho,<br>
+listy brezy previsnutej,<br>
+listy a korene žihľavy dvojdomej,<br>
+listy a korene slezu lesného,<br>
+listy šalvie lekárskej a<br>
+vňať lastovičníka väčšieho namiešané v pomere 2:2:2:2:2:2:1:1<br> 
+(odmerkou môže byť napríklad šálka).<br><br>
+
+PRÍPRAVA: Polievkovú lyžicu zmesi zalej pollitrom vriacej vody, lúhuj 30 minút a preceď. Vlasy si oplachuj vlažným roztokom, potom si hlavu zabaľ do uteráka (neutieraj !) a nechaj voľne usušiť.
+Po pridaní decilitra 40-percentnej vodky do tohto záparu vznikne vlasové tonikum. Skladuj ho v chladničke a každý večer jemne votri do vlasovej pokožky.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania.<br><br>
+
+4. Šťavy:<br>
+* Cviklová, petržlenová, špenátová (aspoň 2dl).<br>
+* 1 veľký pomaranč, 150g jahôd.<br>
+* 75g brusníc, 1 1/2 jablka.<br>
+* 1/4 červenej papriky, 1/4 zelenej papriky, 1/3 uhorky.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+B-komplex, Vitamín C 1000 - po dve tablety denne po jedle počas troch mesiacov; potom rovnaké obdobie po jednej tablete denne. Zinok - mesiac tri tablety denne po jedle; potom tri mesiace dve tablety denne a dva mesiace jednu tabletu denne. Selén - tak isto, vždy spolu so Zinkom. Vitamín E 100 - tak ako Selén. Lecitín 1 200 - mesiac trikrát denne po dve tablety; potom tri mesiace trikrát denne po jednej tablete a tri mesiace dve tablety denne.<br><br> 
+ 
+6. Potrebná duchovná zmena:<br><br>
+NEVRACAJ SA V MYŠLIENKACH NEPRESTAJNE K TOMU, ČO ZLÉ SA TI STALO V MINULOSTI, NEROZPITVÁVAJ STARÉ KRIVDY. NEUPODOZRIEVAJ ĽUDÍ, ŽE TI CHCÚ UBLÍŽIŤ, NEBOJ SA REALIZOVAŤ TO, ČO POVAŽUJEŠ ZA SPRÁVNE, NECÚVAJ PRED PREKÁŽKAMI, ALE ICH POKOJNE ZDOLÁVAJ. VER VO SVOJE SCHOPNOSTI, NEIGNORUJ MOŽNOSTI, KTORÉ SA TI PONÚKAJÚ, VYSTRÍHAJ SA SUCHOPÁRNOSTI A ZLOSTI.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

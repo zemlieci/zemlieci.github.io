@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hirzutizmus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Hirzutizmus</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+endokrinnú poruchu, ktorá súvisí priamo buď s činnosťou vaječníkov alebo kôrou nadobličiek. Postihnutým ženám vyrastajú na tvári, trupe a končatinách chlpy také tvrdé, aké mužom vyrastajú na typicky mužských miestach. Problém nadmerného ochlpenia však môže začať trápiť hociktorú ženu po menopauze (zvýšená hladina mužských pohlavných hormónov v krvi). Trpia ním aj tie ženy športovkyne, ktoré užívajú anabolické steroidy (hormóny na zväčšenie svalovej hmoty). Niekedy však nadmerné ochlpenie vzniká aj bez akejkoľvek zjavnej endokrinnej abnormality. Osobitne sú naň náchylné tmavovlasé ženy.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+ROVNAKÉ DIELY<br>
+koreňa púpavy lekárskej,<br>
+koreňa lopúcha väčšieho,<br>
+koreňa ihlice tŕnistej,<br>
+kvetov bazy čiernej,<br>
+kvetov pagaštanu konského,<br>
+vňate imela bieleho (bez bobúľ !),<br>
+vňate yzopa lekárskeho,<br>
+vňate pakostu smradľavého,<br>
+listov medovky lekárskej,<br>
+vňate alchemilky žltozelenej,<br>
+listov brezy previsnutej,<br>
+kvetov rumančeka pravého a<br>
+plodov fenikla obyčajného (fenikel).<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 15 minút a preceď. Pi denne po dúškoch do 19. hodiny. Po piatich dňoch si vždy urob dva dni prestávku. Takto pi čaj pol roka.<br>
+* Cez deň si na hodinu prilož na celé podbrušie obklady zo Švédskych bylín (dostať ich v lekárni).<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania. Najmenej pol roka dodržiavaj Pečeňovú diétu.<br><br>
+
+4. Šťavy:<br>
+* jablková 2dl.<br>
+* jahodová 2dl.<br>
+* grapefruitová 2dl.<br>
+* mrkvová 2dl. SI paradajková 2dl.<br>
+* 3 veľké mrkvy, 6 listov kučeravého kelu.<br>
+* 1/4 stredne veľkej vodnice, 3 paradajky, 1 strúčik cesnaku.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Pol roka užívaj denne po tri tablety: Betakaroten, Vitamín E 400, Vitamín C 1000 zo šípok, Acidophilus, ABC Plus.<br><br>
+
+6. Iné rady:<br>
+Celú chrbticu si mesiac natieraj olejom. Po mesiaci si daj celú chrbticu, no najmä jej krížovú časť napraviť u ortopéda Pozor na prechladnutia od nôh, nesadaj si na studené plochy. Nos iba bavlnenú bielizeň. Počas pol roka si vždy po skončení menštruácie aplikuj do pošvy 1 tubu Femigelu (dostať ho v lekárni).<br><br>
+
+7. Potrebná duchovná zmena:<br><br>
+NIKDY NIČ NERIEŠ SILOU ANI HRUBOSŤOU. BUĎ JEMNÁ, TOLERANTNÁ, LÁSKAVÁ, POKOJNÁ, NEKONAJ CHAOTICKY. NECHCI SA VYROVNAŤ V ČOMKOĽVEK MUŽOM, TROMFNÚŤ ICH, PREDBEHNÚŤ A PODOBNE. KEĎ CHCEŠ, ABY V TEBE KVITLA ŽENSKOSŤ, SEJ IBA TO, Z ČOHO VYRASTÁ !</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

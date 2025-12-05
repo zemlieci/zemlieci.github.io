@@ -1,0 +1,103 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Systémový lupus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Systémový lupus</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+imunokomplexné  chronické  ochorenie, ktoré postihuje rôzne orgány a orgánové systémy. Vlastný organizmus si vytvára protilátky proti hlavným zložkám bunkových jadier.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+30g listov ríbezle čiernej,<br>
+30g listov ostružiny malinovej,<br>
+30g listov brezy previsnutej,<br>
+30g koreňa púpavy lekárskej,<br>
+30g koreňa lopúcha väčšieho,<br>
+20g kvetov rumančeka pravého,<br>
+20g podzemku pýru plazivého,<br>
+20g listov jahody obyčajnej,<br>
+20g plodov ruže šípovej (šípky),<br>
+20g vňate repíka lekárskeho,<br>
+15g kôry vŕby bielej,<br>
+15g vňate ľubovníka bodkovaného,<br>
+15g vňate lipkavca syridlového,<br>
+15g vňate stavikrvu vtáčieho a<br>
+15g kvetov hlohu jednosemenného.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 15 minút a preceď do termosky. Pi po dúškoch do 19. hodiny. Po minutí zmesi si urob trojtýždňovú prestávku.<br>
+Novú zmes si priprav bez posledných piatich druhov. Po minutí tejto zmesi si urob opäť trojtýždňovú prestávku. Ďalšiu zmes si už namiešaj zo všetkých bylín.<br>
+Dovedna si takto urob šesť čajových kúr.<br><br>
+
+* Trikrát do týždňa si rob kúpele z tejto zmesi:<br>
+listy ríbezle čiernej,<br>
+listy brezy previsnutej,<br>
+koreň lopúcha väčšieho,<br>
+vňať pamajoránu obyčajného,<br>
+kvety lipy malolistej,<br>
+vňať prasličky roľnej,<br>
+listy podbeľa liečivého,<br>
+vňať vresu obyčajného,<br>
+výhonky jedle alebo smreku obyčajného namiešaj v pomere 2:2:2:2:1:1:1:1:1:1 (odmerka môže byť napríklad šálka).<br>
+Vaňový kúpeľ. Kúpele si rob dlhodobo.<br>
+Raz do týždňa a dlhodobo si priprav aj kúpeľ v soli z Mŕtveho mora (postupuj podľa priloženého návodu).<br>
+* Celú chrbticu a kĺby si dvakrát denne striedavo masíruj propolisovou a kostihojovou masťou.<br>
+Na ošetrovanie pokožky tela používaj kozmetiku s olejom Tea tree alebo s bahnom z Mŕtveho mora.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania. Sedemdesiat až osemdesiat percent stravy konzumuj výlučne v surovom stave !<br><br>
+
+4. Šťavy:<br>
+cviklová, mrkvová, broskyňová, paradajková, uhorková, špenátová, zelerová, petržlenová.<br>
+Denne pi niektorú, v množstve aspoň 2dl.<br><br>
+
+5. Prírodné preparáty:<br>
+Dlhodobo užívaj Golden Yaccu. Pri tomto prípravku zvýš príjem tekutín na 2 až 3 litre denne (nie minerálky !). Okrem toho pol roka ber: prírodný B-komplex a prírodný Vitamín C 1000 zo šípok- dve tablety denne po jedle. Vitamín E 400 - dve tobolky denne. ABC 145 Plus - trikrát denne po jednej tablete po jedle. RNA DNA - trikrát denne po jednej tablete. Triple potency lecitín - dve tobolky denne. Rutín - dve tablety denne. Koenzým Q 10 - dve tablety denne.
+Po polroku zo všetkého dlhodobo po jednej tablete denne. Mumio. Medzi baleniami si vždy urob týždňovú prestávku.<br><br>
+
+6. Iné rady:<br>
+Dávaj si pozor na prechladnutie od nôh, spávaj v ponožkách.<br><br>
+ 
+7. Potrebná duchovná zmena:<br><br>
+NEVRACAJ SA V MYŠLIENKACH K SITUÁCIÁM, KTORÉ TI SPÔSOBILI BOLESŤ. NEMYSLI SI, ŽE SI NA TOMTO SVETE ZBYTOČNÝ A NEPOTREBNÝ. NEBOJ SA VYSLOVIŤ SVOJ NÁZOR A UCHÁDZAŤ SA O TO, ČO TI PRÁVOM PATRÍ. NEDÁVAJ VO SVOJOM SRDCI PRIESTOR HNEVU ANI TÚŽBE ODPLÁCAŤ SA ZA ZLÉ ZLÝM.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

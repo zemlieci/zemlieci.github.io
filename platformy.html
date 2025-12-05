@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>﻿O stránke na iných platformách</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/platforma.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content">
+
+Tieto stránky plánujem rozšíriť aj na iné platformy, aj na také nad ktorými nemá nikto kontrolu, takže ich ani nikto nebude môcť vymazať, alebo vypnúť.<br><br>
+
+Konkrétne pôjde o platformy:<br>
+Tor - (The Onion Router) je anonymizačná sieť, ktorá umožňuje používateľom bezpečne a súkromne prehliadať internet tým, že ich komunikácia prechádza cez viacero náhodných uzlov. Tým sa skrýva identita, poloha aj aktivita používateľa.<br><br>
+
+P2P - (peer-to-peer) je typ počítačovej siete, kde sa zariadenia – nazývané „uzly“ alebo „peers“ - spájajú priamo medzi sebou. Každý účastník je rovnocenný. Môže dáta prijímať aj poskytovať.
+Na rozdiel od klasického modelu klient–server, kde všetko riadi centrálny server, v P2P sa komunikácia deje priamo medzi používateľmi.<br><br>
+
+I2P (Invisible Internet Project) je anonymizačná sieťová vrstva, ktorá umožňuje bezpečnú, súkromnú a decentralizovanú komunikáciu na internete. Funguje podobne ako Tor, ale je navrhnutá ako samostatný ekosystém, kde sa všetka prevádzka odohráva vo vnútri I2P siete.<br><br>
+
+Freenet - je decentralizovaná anonymná sieť, ktorá umožňuje bezpečné a necenzurovateľné zdieľanie informácií. Funguje na princípe peer.to.peer (P2P) a je navrhnutá tak, aby chránila identitu používateľov a poskytovala slobodu prejavu aj v prostredí, kde je internet cenzurovaný.<br><br>
+
+Ako funguje Freenet<br>
+
+Rozdelenie dát: Pôvodné súbory sa rozdelia na malé zašifrované časti, ktoré sa distribuujú medzi uzly siete.<br>
+Distribuované úložisko: Každý počítač uchováva len fragmenty dát, takže nikto nevie, aký obsah presne má uložený.<br>
+Anonymné požiadavky: Uzly preposielajú požiadavky ďalej, bez toho aby vedeli, kto konkrétne žiada daný súbor.<br>
+Odolnosť voči cenzúre: Vďaka decentralizácii nie je možné jednoducho odstrániť obsah – neexistuje centrálny server<br><br>
+
+Mastodon - je decentralizovaná sociálna sieť, ktorá funguje ako alternatíva k Twitteru/X. Je postavená na otvorenom protokole ActivityPub a umožňuje používateľom komunikovať naprieč tisíckami nezávislých serverov („inštancií“), ktoré spolu tvoria federovanú sieť.<br><br>
+
+Discord - je populárna komunikačná platforma, ktorá kombinuje textový chat, hlasové hovory, videohovory a komunitné servery. Pôvodne vznikla pre hráčov, ale dnes ju používajú rôzne skupiny – od školských tried cez pracovné tímy až po fanúšikovské komunity.<br><br>
+
+Ako náhle budú služby bežať, tak sem postupne pribudnú linky a privátne pozvánky k všetkým týmto službám. Dovtedy majte prosím strpenie...
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

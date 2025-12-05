@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cysty na vaječníkoch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Cysty na vaječníkoch</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+chronický zápal vaječníkov, narušenú hladinu hormónov. Po každom silnejšom prechladnutí sa stáva chronický zápal akútnym a končí sa vytvorením dutiny vyplnenej tekutinou, čiže cysty. Vo vyše 90 percentách sú tieto cysty nezhubné a viaceré miznú spontánne, samy od seba. V niektorých prípadoch však spôsobujú bolesť v podbrušku alebo poruchy menštruačného cyklu. Okrem liečby vaječníkov treba podporovať činnosť pečene a celej tráviacej sústavy.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+30g vňate alchemilky žltozelenej,<br> 
+30g listov žihľavy dvojdomej,<br> 
+30g vňate hluchavky bielej,<br> 
+30g kvetov rumančeka pravého,<br> 
+20g vňate prasličky roľnej,<br> 
+20g listov medovky lekárskej,<br> 
+20g listov skorocelu kopijovitého,<br> 
+20g kvetov nechtíka lekárskeho,<br> 
+20g vňate myšieho chvosta obyčajného,<br> 
+20g vňate nátržníka husieho,<br> 
+20g vňate materinej dúšky tymiánovej,<br> 
+10g šišiek chmeľu obyčajného,<br> 
+10g vňate ľubovníka bodkovaného a 10g plodov fenikla obyčajného (fenikel).<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 10 minút a preceď.
+Čaj pi po dúškoch celý deň. <strong>(Nie však počas menštruácie !)</strong> Po minutí zmesi si urob dvojtýždňovú prestávku a opäť si namiešaj novú zmes.<br><br>
+
+SEDACÍ KÚPEĽ: ROVNAKÉ DIELY<br>
+kvetov rumančeka pravého,<br>
+vňate hluchavky bielej,<br> 
+vňate alchemilky žltozelenej a<br> 
+listov slezu lesného,<br> 
+listov šalvie lekárskej.<br>
+Celkove si urob 70 kúpeľov.<br>
+* Na oblasť vaječníkov si prikladaj obklady.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania - kap. (142). Urobíš dobre, keď úplne vynecháš mäso. V boji proti zápalom potrebuješ najmä dostatok vitamínov skupiny B a vitamínu C. Množstvo obranných látok si telo vytvorí aj konzumovaním bielkovín (kyslomliečne výrobky, sója).<br><br>
+
+4. Šťavy:<br>
+* z granátových jabĺk 2dl.<br>
+* mrkvová 3dl, cviklová 0,9dl, uhorková 0,9dl.<br>
+* mrkvová 2,7dl, zelerová 2,1dl.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Pol roka ber denne po dve tablety: Betakarotén, Vitamín E 400, Vitamín C 1000 zo šípok. Do pošvy si dávaj vaginálny gél Femigel. Postupuj podľa návodu na priloženom letáku. Celkove použi šesť balení Femigelu. Dostať ho v lekárni.<br><br>
+
+6. Iné rady:<br>
+Dávaj si pozor na prechladnutia od nôh, spávaj v bavlnených ponožkách, nesadaj si na studené plochy !  U ortopéda si daj napraviť krížovú a bedrovú časť chrbtice.<br><br>
+ 
+7. Potrebná duchovná zmena:<br><br>
+PRÍČINU SVOJICH ŽIVOTNÝCH PROBLÉMOV NEHĽADAJ VO SVOJOM PARTNEROVI. NEVYSIELAJ K NEMU MYŠLIENKY NAPLNENÉ HNEVOM, NESPOKOJNOSŤOU, VÝČITKAMI, UKRIVDENOSŤOU. KEĎ SA TI NIEČO NEPÁČI, KEĎ SI S NIEČÍM NESPOKOJNÁ, ÚPRIMNE SA S NÍM O TOM POZHOVÁRAJ. NEZABÚDAJ, ŽE TAK, AKO PARTNER NIE VŽDY SPĹŇA TVOJE PREDSTAVY A OČAKÁVANIA, TO ISTÉ MÔŽE ON POCIŤOVAŤ V SÚVISLOSTI S TEBOU. UČTE SA JEDEN OD DRUHÉHO, VNÍMAJTE SA VÄČŠMI SRDCOM AKO OČAMI !</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

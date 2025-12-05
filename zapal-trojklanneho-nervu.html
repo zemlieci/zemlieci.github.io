@@ -1,0 +1,94 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zápal trojklanného nervu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Zápal trojklanného nervu</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+chronický zápal v prínosových a čelných dutinách, zápal pri koreňoch zubov, oslabenú činnosť obličiek, močových ciest a močového mechúra, oslabený imunitný systém.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+ROVNAKÉ DIELY<br>
+listov žihľavy dvojdomej,<br>
+vňate repíka lekárskeho,<br>
+vňate ľubovníka bodkovaného,<br>
+listov ríbezle čiernej,<br>
+vňate materinej dúšky obyčajnej,<br>
+vňate prasličky roľnej,<br>
+kvetov bazy čiernej,<br>
+vňate zlatobyle obyčajnej,<br>
+listov medovky lekárskej,<br>
+kvetov prvosienky jarnej a<br>
+listov podbeľu liečivého.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve zarovnané čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj desať minút a preceď. Pi po dúškoch celý deň. Po troch týždňoch užívania si urob týždňovú prestávku a takto pokračuj pol roka.<br>
+* Na postihnutú časť tváre si prikladaj lokálne obklady z čerstvých listov podbeľa liečivého.<br>
+Listy rozotri nekovovým predmetom na kašu, tú vlož medzi dve vrstvy gázy, prekry mikroténom a upevni. Nechaj pôsobiť pol hodiny.<br><br>
+
+* Zo sušených listov si urob zápar.<br>
+POSTUP: Polievkovú lyžicu listov zalej dvoma decilitrami vriacej vody, lúhuj pol hodiny a preceď. Do roztoku namoč biele plátno, mierne ho vyžmýkaj, prilož na tvár, prekry mikroténom a upevni. Za deň si môžeš priložiť obklad viackrát. Rob dlhodobo.<br>
+* Dvakrát denne si kvapni do ucha, ktoré ťa nebolí jednu kvapku a do boľavého po dve kvapky rumančekovo-nechtíkovo-cesnakového oleja. Rob až do odstránenia zdravotného problému.<br>
+* Okrem toho si aplikuj vaňové kúpele z plodov gaštana jedlého.<br>
+PRÍPRAVA: Dve polievkové lyžice postrúhaných plodov var na miernom ohni 10 minút a po odstavení z ohňa lúhuj 20 minút. Potom preceď do kúpeľa a miešaj do spenenia. Vaňový kúpeľ.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania.<br>
+
+4. Šťavy:<br>
+* Citrónová (1 väčší citrón vytlač do 2dl vody).<br>
+*  Karotka 300g, cvikla 100g, uhorky 100g.<br>
+* Karotka 300g, zeler 200g. Ak použiješ zelerovú vňať, zmeň podiel na 350g karotky a 150g zeleru.<br>
+* Karotka 300g, špenát 200g.<br>
+* Karotka 300g, zeler 150g, petržlen 50g.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+B-komplex(prírodný) - mesiac trikrát denne po jednej tablete, potom pol roka dve tablety denne vždy po jedle. Vitamín C 1000 s postupným vstrebávaním - ako B-komplex. Silicea balzam - jednu polievkovú lyžicu denne zapi čajom alebo vodou (využívaj 250 ml). Kalcium + Magnézium + Zinok - dve tablety denne spolu s dvoma tabletami Selénu. Predtým vždy zjedz 50 až 100g obilninovej kaše, jedlo z rýb alebo za hrsť orechov. Dovedna využívaj 300 tabliet. L-lyzín - trikrát denne po jednej tablete. Dovedna 300 tabliet. Podľa veku si nasaď Golden Yaccu. Pri tomto prípravku zvýš príjem tekutín na 2 až 3 litre denne.<br>
+
+6. Iné rady:<br>
+Dávaj si pozor nielen na prievan, ale aj na prechladnutie od nôh !  Spávaj v teplých ponožkách.<br>
+ 
+7. Potrebná duchovná zmena:<br><br>
+NEMAJ STRACH ZHOVÁRAŤ SA S ĽUĎMI, NEOBVIŇUJ SA Z NESCHOPNOSTI, NEPRIPISUJ SI RÔZNE CHYBY A VINY, NESTRÁCAJ OPTIMIZMUS. NAUČ SA MAŤ RÁD SEBA AJ VŠETKO, ČO ŤA OBKLOPUJE. VER V LÁSKU, ŽI A KONAJ HARMONICKY.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

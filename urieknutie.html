@@ -1,0 +1,90 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urieknutie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Urieknutie</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+stenčený a oslabený vonkajší energetický obal, ktorý potom umožňuje iným ľuďom (buď vedome alebo nevedome) napojiť sa na takto postihnutého človeka a ešte väčšmi ho odčerpávaním bioenergie oslabiť. V prípade, že odčerpávanie (t. j. bioenergetický upírizmus) trvá dlhšie, môže napádanej obeti spôsobiť fyziologické poruchy v niektorých orgánoch.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+ROVNAKÉ DIELY<br>
+kvetov bazy čiernej,<br>
+vňate prasličky roľnej,<br>
+vňate myšieho chvosta obyčajného,<br>
+listov žihľavy dvojdomej,<br>
+kvetných lupienkov nechtíka lekárskeho a<br>
+listov fialky trojfarebnej.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 10 minút a preceď do termosky. Pi trikrát denne po dvoch šálkach vždy hodinu po jedle. Po mesiaci si urob dva týždne prestávku a kúru takto zopakuj ešte trikrát.<br>
+* Pri urieknutí (sprevádza ho pulzujúca bolesť v hlave, trasenie tela, nutkanie na vracanie, až zvracanie, zívanie, studený pot, pocit mdloby, celková únava a slabosť), si priprav tento zápar:<br>
+ROVNAKÉ DIELY<br>
+listov medovky lekárskej, listov mäty piepornej a kvetov rumančeka pravého.<br>
+PRÍPRAVA A UŽÍVANIE: Desať štipiek tejto zmesi zalej štyrmi decilitrami vriacej vody, lúhuj 10 minút a preceď. Dva decilitre čaju vypi po dúškoch, ďalšími dvoma si masíruj oblasť nad oboma zápästiami a oblasť žalúdočnej jamky (pod hrudnou kosťou).<br><br>
+
+* Každý večer si urob vaňové kúpele z tejto zmesi:<br>
+ROVNAKÉ DIELY<br>
+vňate čistca rovného a vňate očianky Rostkovovej.<br><br>
+
+PRÍPRAVA: Dve polievkové lyžice čistca vhoď do dvoch litrov vriacej vody, na slabom ohni var 5 minút, odstav z ohňa, pridaj dve polievkové lyžice očianky, lúhuj 20 minút, preceď a pridaj do kúpeľa. Vaňový kúpeľ.
+Po dvoch týždňoch aplikovania kúpeľov (vždy si priprav čistý roztok), mesiac si rob kúpele každý druhý deň a potom ešte mesiac dvakrát do týždňa. Na posilnenie biopoľa je vhodný aj kúpeľ.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania. Jedz veľa čerstvého ovocia a zeleniny a také produkty, ktoré posilňujú nervovú sústavu.<br><br>
+
+4. Šťavy:<br>
+* Mrkvová (aspoň 2dl denne).<br>
+* Mrkvová 3dl, cviklová 0,9dl, uhorková 0,9dl.<br>
+* Mrkvová 3dl, špenátová 1,8dl.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné produkty:<br>
+Trikrát denne 25mg Zinku, denne 1 tobolku Vitamínu AD, raz denne po jedle 250mg B komplexu s Vitamínom C, 3x denne 1 tobolku Vitamínu E.<br><br>
+
+6. Iné rady:<br>
+Každé ráno, hneď ako vstaneš, obráť sa čelom k východu, prežehnaj sa a popros Ježiša, aby ti pomohol vytvoriť okolo teba dostatočne silný ochranný obal. Obal si predstav ako pevný vajcovitý ovál, v ktorom si bezpečne uzavretý od hlavy až po chodidlá tak, že von ti vyčnievajú iba raky od zápästí a v hlavovej časti je otvor pre ústa, oči a uši. Ďalšie spôsoby uzavretia aury sú uvedené v (Ochrana pred urieknutím).<br><br>
+
+7. Potrebná duchovná zmena:<br><br>
+NEPODLIEHAJ NERVOZITE, STRACHU, NEROZHODNOSTI. VYTVÁRAJ SI OKOLO SEBA HARMONICKÉ PROSTREDIE PLNÉ LÁSKY, POROZUMENIA A POKOJA. DÔVERUJ SVOJIM FYZICKÝM I DUŠEVNÝM SILÁM A TVORIVÝM SCHOPNOSTIAM. NEBOJ SA PRESADZOVAŤ SVOJE NÁZORY A POŽIADAVKY.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

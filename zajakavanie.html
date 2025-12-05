@@ -1,0 +1,87 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zajakávanie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Zajakávanie</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+nervovú príčinu ochorenia. Tá môže mať svoj pôvod v prekonanom slabšom zápale mozgu, ktorý zasiahol aj rečové centrum. Na zvyšovaní zajakavosti sa však podieľa aj nadmerné psychické vypätie, strach, nervozita. Aby sa zajakavosť nezhoršovala, dbaj na to, aby nevznikali alebo nepretrvávali zápaly vo vylučovacích a pohlavných orgánoch !<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+25g vňate repíka lekárskeho,<br>
+25g listov medovky lekárskej,<br>
+25g vňate fialky trojfarebnej,<br>
+25g listov ostružiny černicovej,<br>
+20g kvetov rumančeka pravého,<br>
+20g vňate prasličky roľnej,<br>
+20g vňate zlatobyle obyčajnej,<br>
+20g listov brezy previsnutej,<br>
+15g koreňa valeriány lekárskej,<br>
+15g kvetov levandule úzkolistej a<br>
+15g vňate ľubovníka bodkovaného.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Dve čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj päť minút a preceď. Pi denne po dúškoch do 19. hodiny. Po dvoch týždňoch si urob týždňovú prestávku. Po minutí zmesi mesiac prestávka a namiešaj si novú zmes.<br>
+* Dva razy do týždňa si rob olejový vaňový kúpeľ. Do vody vo vani si pridaj po tri kvapky pomarančového a levanduľového oleja a oleja Ylang-ylang.<br>
+Vodu dokonale rozčer. Ponorený v kúpeli zotrvaj 20 minút. Telo si neutri, ale zabaľ sa do osušky a ulož na hodinu do vyhriatej postele (oleje dostať v lekárni).<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania. Strava by mala byť prevažne zásadotvorná a neupravovaná tepelne.<br><br>
+
+4. Šťavy:<br>
+* mrkvová (aspoň pol litra denne).<br>
+* mrkvová 2,1dl, zelerová 1,2dl, petržlenová 0,6dl, špenátová 0,9dl.<br>
+* čistá špenátová 0,5dl.<br>
+* mrkvová 2,7dl, zelerová 2,1dl.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Tri mesiace užívaj po tri tablety denne:
+Vitamín E100, Vitamín C1000 zo šípok, Lecitín 1200, Stress B-komplex.<br><br>
+
+6. Iné rady:<br>
+Dávaj si pozor na prechladnutia, najmä od nôh. Denne si čítaj pomaly, zreteľne a nahlas texty z knižiek, časopisov a podobne. Potrebné sú aj návštevy u logopéda.<br><br>
+
+7. Potrebná duchovná zmena:<br><br>
+PREHODNOŤ SI VZŤAH K SVOJMU TELU, NEPOVAŽUJ ZA JEHO NAJHODNOTNEJŠIU, NAJČISTEJŠIU A NAJBEZPEČNEJŠIU SÚČASŤ IBA HLAVU. NEPOTLÁČAJ SVOJU SEXUALITU, NEBOJ SA UVOĽNIŤ A RADOVAŤ ZO ŽIVOTA. BUĎ OTVORENÝ A ÚSTRETOVÝ, NEBUDUJ SI V SEBE POMYSELNÉ HRÁDZE A PREKÁŽKY, NESPÚTAVAJ SÁM SEBA STRACHOM, OBAVAMI, NEDÔVERČIVOSŤOU. KAŽDÝ DEŇ SI SPIEVAJ VESELÉ PESNIČKY.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zápal očného nervu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger pre mobil -->
+  <div class="hamburger">?</div>
+  <div class="overlay"></div>
+
+  <img src="obrazky/liecenie.png" class="top-image" alt="Liečime sa sami">
+  <hr>
+
+  <div class="centered">
+
+    <!-- MENU – načítava sa z menu.js (funguje vždy a všade) -->
+    <script src="menu.js"></script>
+
+    <!-- OBSAH STRÁNKY -->
+    <div class="content"><H1>Zápal očného nervu</H1>
+		
+		1. Biopole upozorňuje najmä na:<br>
+prekonané vírusové ochorenie, výrazne oslabený imunitný systém, chronický zápal vo vylučovacom a dýchacom systéme, oslabenú činnosť pečene a nervovej sústavy.<br><br>
+
+2. Odporúčaná fytoterapia:<br>
+ROVNAKÉ DIELY<br>
+vňate prasličky roľnej,<br>
+vňate zlatobyle obyčajnej,<br>
+listov brezy previsnutej,<br>
+kvetov nechtíka lekárskeho,<br>
+listov podbeľa liečivého,<br>
+kvetov nevädze poľnej,<br>
+kvetných lupienkov maku vlčieho,<br>
+vňate kocúrnika obyčajného,<br>
+vňate boráka lekárskeho,<br>
+vňate myšieho chvosta obyčajného,<br>
+vňate skorocelu kopijovitého,<br>
+stielky pľuzgierky islandskej a<br>
+koreňa púpavy lekárskej.<br><br>
+
+PRÍPRAVA A UŽÍVANIE: Tri čajové lyžičky zmesi zalej litrom vriacej vody, lúhuj 10 minút a preceď.
+Pi po dúškoch celý deň do 19. hodiny. Po troch týždňoch užívania si urob týždňovú prestávku a kúru takto opakuj pol roka.<br><br>
+
+* Na oči si prikladaj obklady z tejto zmesi:<br>
+ROVNAKÉ DIELY<br>
+kvetov hlohu jednosemenného, kvetov nechtíka lekárskeho, kvetov nevädze poľnej, vňate očianky rostkovovej, kvetných lupienkov ruže galskej a kvetov rumančeka pravého. Byliny musia byť absolútne čisté !<br><br>
+
+PRÍPRAVA: Zarovnanú kávovú lyžičku zmesi zalej poldruha decilitrom vriacej vody, pridaj 5 plodov fenikla obyčajného a 5 plodov kôpru voňavého. Lúhuj 15 minút a preceď. Do pripraveného záparu daj 5 kvapiek šťavy z lastovičníka väčšieho, 5 kvapiek šťavy z kaktusu aloe a dokonale premiešaj.<br>
+* Dvakrát denne si rob v očnej vaničke aj kúpeľ očí a raz denne si prilož na zavreté oči tampóny vaty alebo gázy namočené v tomto vlažnom zápare. Zvyšný zápar skladuj v dobre uzavretej fľaške v chladničke.<br>
+* Po kúpeli aj po obklade si viečka zľahka potri nechtíkovou masťou.<br><br>
+
+3. Stravovanie:<br>
+Podľa Zásad správneho stravovania. * Bezpodmienečne vynechaj cukry, med, alkohol, mäso !  Dvakrát do týždňa konzumuj jedlo z pohánky, soľ obmedz na minimum.<br><br>
+
+4. Šťavy:<br>
+*  Citrónová (vytlač 1 väčší citrón a zalej ho 2dl vody).<br>
+* Mrkvová 3dl, cviklová 1dl, uhorková 1dl.<br>
+* Mrkvová 2,7dl, zelerová 1,5dl, petržlenová 0,6dl.<br>
+*  Mrkvová 3,6dl, zo zelenej papriky 1,2dl.<br>
+Denne pi niektorú.<br><br>
+
+5. Prírodné preparáty:<br>
+Podľa veku začni užívať Golden Yaccu. Pri tomto prípravku zvýš príjem tekutín na 2 až 3 litre denne (nie minerálky !). Okrem toho pol roka ber prírodný B-komplex- tri tablety denne po jedle. Thiamin - 3x denne tabletu po jedle. Vitamín C 1000 - mesiac tri tablety denne, potom dve tablety denne. Chlorella 3x denne po jednej tablete, dovedna tri balenia (300 tabliet). Zinok - 3x2 tablety denne. Potom užívaj B-komplex a Vitamín C 1000 dlhodobo (po jednej tablete denne) a dlhodobo aj prípravok ABC Plus - jednu tabletu denne po jedle.<br><br>
+
+6. Iné rady:<br>
+Dávaj si pozor na prechladnutie od nôh, na prievan, spávaj v ponožkách a čo najďalej od okna, nesadaj si na studené predmety ! <br><br>
+
+7. Potrebná duchovná zmena:<br><br>
+NAMIESTO ZLOSTI, PODRÁŽDENOSTI, NEOCHOTY, NENÁVISTI A STRACHU DAJ PRIESTOR VO SVOJOM SRDCI NEZIŠTNEJ LÁSKE. ZMEŇ SA VNÚTORNE AJ NAVONOK TAK, ABY SA PEVNOU SÚČASŤOU TVOJEJ OSOBNOSTI STALI POKOJ, HARMÓNIA, OCHOTA A SÚCIT. NEVRACAJ SA DO MINULOSTI, ŽI V PRÍTOMNOSTI, S DÔVEROU A OPTIMIZMOM SA POZERAJ DO BUDÚCNOSTI.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript pre rozbaľovanie a mobilné menu -->
+  <script>
+    function toggleOnlyThis(id) {
+      ['menu1','menu2'].forEach(x => {
+        const el = document.getElementById(x);
+        if (el) {
+          if (x === id) el.classList.toggle('open');
+          else el.classList.remove('open');
+          el.style.maxHeight = el.classList.contains('open') ? el.scrollHeight + 'px' : null;
+        }
+      });
+    }
+    document.querySelector('.hamburger').onclick = () => document.body.classList.toggle('menu-open');
+    document.querySelector('.overlay').onclick   = () => document.body.classList.remove('menu-open');
+  </script>
+</body>
+</html>
